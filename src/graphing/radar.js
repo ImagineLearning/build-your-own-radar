@@ -637,7 +637,6 @@ const Radar = function (size, radar) {
     var blipScale = 3 / 4
     var blipTranslate = (1 - blipScale) / blipScale
 
-    svg.style('left', moveLeft + 'px').style('right', moveRight + 'px')
     d3.select('.quadrant-group-' + order)
       .transition()
       .duration(ANIMATION_DURATION)
@@ -719,9 +718,12 @@ const Radar = function (size, radar) {
 
     plotQuadrantButtons(quadrants, header)
 
-    radarElement.style('height', size + 14 + 'px')
-    svg = radarElement.append('svg').call(tip)
-    svg.attr('id', 'radar-plot').attr('width', size).attr('height', size + 14)
+    svg = radarElement.append('div').attr('class', 'radar-plot-container').append('svg').call(tip)
+    svg.attr('id', 'radar-plot').attr('viewBox', '0 0 ' + size + ' ' + (size + 14))
+
+    radarElement.selectAll('.quadrant-table').filter(function(_, i) {
+      return i === 0 || i === 3;
+    }).raise();
 
     let blips = []
     const findBlip = (name) => {
