@@ -214,11 +214,11 @@ const Radar = function (size, radar) {
     var group = quadrantGroup.append('g').attr('class', 'blip-link').attr('id', 'blip-link-' + blip.number())
     
     group.append('image')
-    .attr('x', x - 15)
-    .attr('y', y - 7)
-    .attr('width', blip.width)
-    .attr('height', blip.width)
-    .attr('xlink:href', getIconHref(blip.icon()));
+      .attr('x', x - 15)
+      .attr('y', y - 7)
+      .attr('width', blip.width)
+      .attr('height', blip.width)
+      .attr('xlink:href', getIconHref(blip.icon()));
 
     group.append('text')
       .attr('x', x - 4)
@@ -353,14 +353,14 @@ const Radar = function (size, radar) {
         .attr('y', y + (i * 24))
         .attr('width', 22)
         .attr('height', 22)
-        .attr('xlink:href', getIconHref(ring))
+        .attr('xlink:href', getIconHref(ring));
 
-        container
-          .append('text')
-          .attr('x', x + 15)
-          .attr('y', y + 15 + (i * 24))
-          .attr('font-size', '0.8em')
-          .text(ring)
+      container
+        .append('text')
+        .attr('x', x + 15)
+        .attr('y', y + 15 + (i * 24))
+        .attr('font-size', '0.8em')
+        .text(ring);
     });
   }
 
@@ -612,9 +612,17 @@ const Radar = function (size, radar) {
 
     plotQuadrantButtons(quadrants, header)
 
-    svg = radarElement.append('div').attr('class', 'radar-plot-container').append('svg').call(tip)
-    svg.attr('id', 'radar-plot').attr('viewBox', '0 0 ' + size + ' ' + (size + 14))
+    svg = radarElement
+      .append('div')
+      .attr('class', 'radar-plot-container')
+      .append('svg').call(tip);
 
+    svg
+      .attr('id', 'radar-plot')
+      .attr('viewBox', '0 0 ' + size + ' ' + (size + 14));
+
+    // First and fourth quadrants need to come after the radar plot container
+    // in the DOM for the flexbox layout to work properly.
     radarElement.selectAll('.quadrant-table').filter(function(_, i) {
       return i === 0 || i === 3;
     }).raise();

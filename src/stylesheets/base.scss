@@ -178,9 +178,6 @@ body {
       max-height: 100vh;
       margin: 0 auto;
       transition: all 1s ease;
-      // position: absolute;
-      // left: 0;
-      // right: 0;
 
       .legend {
         visibility: hidden;
@@ -273,7 +270,6 @@ body {
 
       max-height: 0;
       max-width: 0;
-      // position: absolute;
       overflow: hidden;
 
       transition: max-height 0.5s ease 1s;
@@ -284,30 +280,6 @@ body {
         margin: 0;
         font-weight: bold;
       }
-
-      // &.first {
-      //   &.selected {
-      //     // float: right;
-      //   }
-      // }
-
-      // &.second {
-      //   &.selected {
-      //     // float: left;
-      //   }
-      // }
-
-      // &.third {
-      //   &.selected {
-      //     // float: left;
-      //   }
-      // }
-
-      // &.fourth {
-      //   &.selected {
-      //     float: right;
-      //   }
-      // }
 
       &.selected {
         max-height: 10000px;
