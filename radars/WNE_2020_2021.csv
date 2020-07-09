@@ -190,7 +190,19 @@ Tailwind CSS,Frontend,Trial,budding,"<p><a href=""https://tailwindcss.com/"">Tai
 <li>Can result in massive CSS bundles if tooling is not configured to purge unused classes for production builds.</li>
 </ul>
 "
-Angular,Frontend,Hold,none,coming
+Angular,Frontend,Hold,none,"<p><a href=""https://angular.io"">Angular</a> is an application design framework and development platform for creating efficient and sophisticated single-page apps.</p>
+<h3>Pros</h3>
+<ul>
+<li>Opinionated framework with many services baked in, such as routing, HTTP client, etc.</li>
+<li>Angular team provides an official style guide and CLI tool, which help maintain consistent file and code structure across projects.</li>
+<li>Framework built around dependency injection for greater testability of isolated services and components.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Steep learning curve. Even for developers coming from <a href="""">AngularJS</a>, the framework is completely different. It follows some sophisticated design patterns that can be difficult to understand at first.</li>
+<li>Requires a lot more boilerplate code than its contemporaries.</li>
+</ul>
+"
 Angular CLI,Frontend,Hold,none,coming
 Protractor,Frontend,Hold,none,"There are better tools today, no, dang it."
 Karma,Frontend,Hold,none,coming
