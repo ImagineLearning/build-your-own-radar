@@ -15,7 +15,21 @@ React,Frontend,Invest,lock,"<p><a href=""https://reactjs.org"">React</a> is a si
 When decision will be revisited: 01/01/2022</p>
 <p>Replaces <a href="""">Angular</a>.</p>
 "
-React hooks,Frontend,Invest,confident,coming
+React Hooks,Frontend,Invest,confident,"<p><a href=""https://reactjs.org/docs/hooks-overview.html"">React Hooks</a> are functions that let you “hook into” React state and lifecycle features from function components.<br />
+React provides <a href=""https://reactjs.org/docs/hooks-reference.html"">a few built-in Hooks</a>, like <code>useState</code> for managing state, <code>useEffect</code> for performing side-effects.</p>
+<h3>Pros</h3>
+<ul>
+<li>Add stateful behavior to function components.</li>
+<li>Use more of React’s features without classes.</li>
+<li>Allow creation of <a href=""https://reactjs.org/docs/hooks-custom.html"">custom Hooks</a>, facilitating reuse of stateful logic across components.</li>
+<li>Completely opt-in and 100% backwards compatible.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Requires a different mental model from traditional lifecycle methods in class components.</li>
+<li>Less separation of concerns, since business logic can be more easily added to function components.</li>
+</ul>
+"
 React scripts,Frontend,Invest,confident,"<p>Package that includes the scripts and configuration used by <a href=""https://github.com/facebook/create-react-app"">Create React App</a>.</p>
 <h3>Pros</h3>
 <ul>
