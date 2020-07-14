@@ -2,14 +2,15 @@ Quickly design and customize responsive mobile-first sites with [Bootstrap](http
 
 ### Pros
 * Widely supported
-* Lightweight and customizable
 * Good grid system
 * Solid documentation
+* Feature rich
 
 ### Cons
 * Style overrides
 * Verbose styles
 * Coupled to JQuery in some cases
+* Relative large size
 
 
 When decision made: 5/1/2020

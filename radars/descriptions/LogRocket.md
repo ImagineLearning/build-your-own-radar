@@ -1,4 +1,4 @@
-[LogRocket](https://www.logrocket.com/) ets you replay what users do on your site, helping you reproduce bugs and fix issues faster. 
+[LogRocket](https://www.logrocket.com/) lets you replay what users do on your site, helping you reproduce bugs and fix issues faster. 
 
 ### Pros
 * Quickly understand errors

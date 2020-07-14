@@ -198,7 +198,7 @@ React Native,Frontend,Trial,budding,"<p><a href=""https://reactnative.dev"">Reac
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-LogRocket,Frontend,Trial,budding,"<p><a href=""https://www.logrocket.com/"">LogRocket</a> ets you replay what users do on your site, helping you reproduce bugs and fix issues faster.</p>
+LogRocket,Frontend,Trial,budding,"<p><a href=""https://www.logrocket.com/"">LogRocket</a> lets you replay what users do on your site, helping you reproduce bugs and fix issues faster.</p>
 <h3>Pros</h3>
 <ul>
 <li>Quickly understand errors</li>
@@ -309,15 +309,16 @@ Bootstrap,Frontend,Hold,budding,"<p>Quickly design and customize responsive mobi
 <h3>Pros</h3>
 <ul>
 <li>Widely supported</li>
-<li>Lightweight and customizable</li>
 <li>Good grid system</li>
 <li>Solid documentation</li>
+<li>Feature rich</li>
 </ul>
 <h3>Cons</h3>
 <ul>
 <li>Style overrides</li>
 <li>Verbose styles</li>
 <li>Coupled to JQuery in some cases</li>
+<li>Relative large size</li>
 </ul>
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
