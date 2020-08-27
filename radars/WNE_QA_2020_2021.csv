@@ -1,0 +1,148 @@
+name,quadrant,ring,icon,description
+TypeScript,Languages,Invest,confident,"<p>A typed superset of JavaScript that compiles to plain JavaScript.</p>
+<h3>Pros</h3>
+<ul>
+<li>Types enable use of highly-productive development tools and practices like static checking and code refactoring.</li>
+<li>Support for the latest and evolving JavaScript features.</li>
+<li>Supported by <a href="""">Angular CLI</a> and <a href="""">React scripts</a>.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Defining types can add to “boilerplate” code.</li>
+<li>Adding JavaScript libraries without type definitions requires jumping through additional hoops.</li>
+<li>Lacks the flexibility that comes with dynamic types in JavaScript.</li>
+</ul>
+<p>When decision made: 5/1/2020</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Cypress,Automation,Trial,budding,"<p><a href=""https://cypress.io"">Cypress</a> is a tool for fast, easy, reliable testing of anything that runs in a browser.</p>
+<h3>Pros</h3>
+<ul>
+<li>Easy to debug using familiar tools like Chrome DevTools.</li>
+<li>Takes snapshots as tests run, making it possible to click through step by step and see exactly what happened.</li>
+<li>No more async hell. Cypress automatically waits for commands and assertions before moving on.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Does not support as many browsers as tools built on <a href=""https://www.selenium.dev/"">Selenium</a>.</li>
+<li>Does not allow scripts to execute across multiple domains, causing complications with things like 3rd-party OAuth flows.</li>
+</ul>
+<p>Replaces <a href="""">Protractor</a>.</p>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Protractor,Automation,Hold,none,"<p><a href=""https://protractortest.org"">Protractor</a> is an end-to-end test framework for Angular and AngularJS applications. Protractor runs tests against your application running in a real browser, interacting with it as a user would.</p>
+<h3>Pros</h3>
+<ul>
+<li>Automatically configured and stubbed out by <a href="""">Angular CLI</a> when generating a new project.</li>
+<li>Supports Angular-specific locator strategies, making it easy to test Angular-specific elements.</li>
+<li>Built on <a href=""https://www.selenium.dev/"">Selenium WebDriver</a>, providing support for a broad range of browsers.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Specifically built for testing Angular and AngularJS applications.</li>
+<li>Difficult to debug tests.</li>
+</ul>
+<p>When decision made: 5/1/2020</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Karma,Automation,Hold,none,"<p><a href=""http://karma-runner.github.io/5.0/"">Karma</a> is a test runner that allows you to execute JavaScript code in multiple real browsers.</p>
+<h3>Pros</h3>
+<ul>
+<li>Tests code in multiple, real browsers.</li>
+<li>Automatically configured by <a href="""">Angular CLI</a> when project is generated.</li>
+<li>Lots of plugins available.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Slower than other test runners that don’t run in an actual browser.</li>
+<li>Difficult to mock imports of ES6/TypeScript modules.</li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Jasmine,Automation,Hold,none,"<p><a href=""https://jasmine.github.io/"">Jasmine</a> is a behavior-driven development framework for testing JavaScript code.</p>
+<h3>Pros</h3>
+<ul>
+<li>Does not depend on other JavaScript frameworks and does not require a DOM.</li>
+<li>Widely used, with a large community around it.</li>
+<li>Includes a wide variety of built-in assertions/matchers.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Does not include a test runner, making it reliant on other tools like <a href="""">Karma</a>.</li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+C#,Languages,Invest,lock,"<p><a href=""https://docs.microsoft.com/en-us/dotnet/core/about"">.NET Core</a> is the successor the .NET framework. It differs from the legacy .NET framework by being cross platform and open source. In many respects .NET core has learned from Node and Ruby and other languages and made a modern ecosystem for C# programmers. AWS Lambda functions are a great way to run snippets of code without worrying about the underlying infrastructure the code would run on. Currently this is most useful as means to cheaply process events from Kinesis, DynamoDb streams, SNS, or SQS. AWS has provided all of the plumbing to handle this efficiently.</p>
+<h3>Pros</h3>
+<ul>
+<li>Works well as Kubernetes jobs</li>
+<li>Small and lightweight containers</li>
+<li>Fast background processing</li>
+<li>Native asynchronous support</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Not as wide of a package base as some other language frameworks</li>
+<li>Cannot be compiled as a single standalone binary (you must have .Net Core runtime available)</li>
+</ul>
+<p>When decision made: 1/1/2020</p>
+<p>When decision will be revisited: 1/1/2022</p>
+"
+jMeter,Automation,Invest,confident,"<p><a href=""https://jmeter.apache.org/"">jMeter</a> is open source software, a 100% pure Java application designed to load test functional behavior and measure performance. It was originally designed for testing Web Applications but has since expanded to other test functions.</p>
+<h3>Pros</h3>
+<ul>
+<li>Open source</li>
+<li>Works well for many different types of tests</li>
+<li>Has a client server mode where very large load tests can be run</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>UI is not very intuitive</li>
+<li>Can be very complex to set up</li>
+</ul>
+<p>When decision made: 1/1/2020</p>
+<p>When decision will be revisited: 1/1/2022</p>
+"
+Github (source),Infrastructure,Invest,lock,"<p><a href=""https://github.com/"">Github</a> is a platform to host all of your git based repositories. By extension <a href=""https://git-scm.com"">git</a> should be used as your distributed version control system.</p>
+<h3>Pros</h3>
+<ul>
+<li>Provides incredible integration and tooling</li>
+<li>Well structured pull requests for code reviews</li>
+<li>Ability to integrate bots to accomplish tasks</li>
+<li>Builtin security scanning</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Occasional outages can affect engineering</li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Jira,Infrastructure,Invest,lock,"<p><a href=""https://www.atlassian.com/software/jira"">Jira</a> is project management software.</p>
+<h3>Pros</h3>
+<ul>
+<li>Can use multiple workflows to accommodate different agile practices</li>
+<li>Not the easiest interface to work with’</li>
+<li>Cloud hosted</li>
+<li>Good plugin support</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Can feel really clunky at times</li>
+<li>Teams can be blocked when there are service interruptions</li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Applause,Manual Tools,Hold,confident,
+Applitools,Automation,Hold,leaning,
+Postman,Manual Tools,Hold,leaning,
+TestRail,Infrastructure,Hold,leaning,
+Zephyr For Jira,Infrastructure,Hold,leaning,
+Javascript,Languages,Hold,leaning,
+Visualization Toolkit,Automation,Trial,budding,https://wiki.hpc.tulane.edu/trac/wiki/cypress/Visualization%20Toolkit%20(VTK)
+Cypress Image Snapshot,Automation,Trial,budding,https://github.com/palmerhq/cypress-image-snapshot
+Ruby,Languages,Divest,leaning,

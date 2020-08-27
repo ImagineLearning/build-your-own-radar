@@ -29,7 +29,7 @@ const plotRadar = function (title, blips, currentRadarName, alternativeRadars) {
   }
   document.title = title
   d3.selectAll('.loading').remove()
-
+    
   var rings = _.map(_.uniqBy(blips, 'ring'), 'ring')
   var ringMap = {}
   var maxRings = 4
@@ -288,7 +288,7 @@ function plotForm (content) {
   var form = content.select('.input-sheet__form').append('form')
     .attr('method', 'get')
 
-  var years = ["/radars/WNE_2020_2021.csv"]
+    var years = ["/radars/WNE_2020_2021.csv", "/radars/WNE_QA_2020_2021.csv"]
   form.append('select')
     .attr('name', 'sheetId')
     .selectAll('years')
