@@ -46,35 +46,6 @@ Protractor,Automation,Hold,none,"<p><a href=""https://protractortest.org"">Protr
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Karma,Automation,Hold,none,"<p><a href=""http://karma-runner.github.io/5.0/"">Karma</a> is a test runner that allows you to execute JavaScript code in multiple real browsers.</p>
-<h3>Pros</h3>
-<ul>
-<li>Tests code in multiple, real browsers.</li>
-<li>Automatically configured by <a href="""">Angular CLI</a> when project is generated.</li>
-<li>Lots of plugins available.</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>Slower than other test runners that don’t run in an actual browser.</li>
-<li>Difficult to mock imports of ES6/TypeScript modules.</li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Jasmine,Automation,Hold,none,"<p><a href=""https://jasmine.github.io/"">Jasmine</a> is a behavior-driven development framework for testing JavaScript code.</p>
-<h3>Pros</h3>
-<ul>
-<li>Does not depend on other JavaScript frameworks and does not require a DOM.</li>
-<li>Widely used, with a large community around it.</li>
-<li>Includes a wide variety of built-in assertions/matchers.</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>Does not include a test runner, making it reliant on other tools like <a href="""">Karma</a>.</li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
 C#,Languages,Invest,lock,"<p><a href=""https://docs.microsoft.com/en-us/dotnet/core/about"">.NET Core</a> is the successor the .NET framework. It differs from the legacy .NET framework by being cross platform and open source. In many respects .NET core has learned from Node and Ruby and other languages and made a modern ecosystem for C# programmers. AWS Lambda functions are a great way to run snippets of code without worrying about the underlying infrastructure the code would run on. Currently this is most useful as means to cheaply process events from Kinesis, DynamoDb streams, SNS, or SQS. AWS has provided all of the plumbing to handle this efficiently.</p>
 <h3>Pros</h3>
 <ul>
@@ -145,4 +116,8 @@ Zephyr For Jira,Infrastructure,Hold,leaning,
 Javascript,Languages,Hold,leaning,
 Visualization Toolkit,Automation,Trial,budding,https://wiki.hpc.tulane.edu/trac/wiki/cypress/Visualization%20Toolkit%20(VTK)
 Cypress Image Snapshot,Automation,Trial,budding,https://github.com/palmerhq/cypress-image-snapshot
-Ruby,Languages,Divest,leaning,
+Ruby on Rails,Languages,Hold,leaning,
+Coffeescript,Languages,Hold,none,https://coffeescript.org/
+Node.js,Automation,Hold,none,https://nodejs.org/en/about/
+Minitest/Rspec,Automation,Hold,none,https://rubygems.org/gems/minitest
+compatriot,Automation,Hold,none,https://rubygems.org/gems/compatriot/versions/1.0.0
