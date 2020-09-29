@@ -1569,3 +1569,21 @@ Octopus Deploy,Infrastructure,Divest,none,"<p><a href=""https://octopus.com/"">O
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
+Sonar Qube+Lint,Infrastructure,Invest,confident,"<p><a href=""https://www.sonarqube.org"">SonarQube</a> Catch bugs and vulnerabilities in your app, with thousands of automated Static Code Analysis rules.</p>
+<h3>Pros</h3>
+<ul>
+<li>Easy way to integrate code quality metrics with CI/CD pipeline</li>
+<li>Good resource for improving code quality during the writing process from within the IDE</li>
+<li>Supports most common languges and IDEs</li>
+<li>Allows high level monitoring of code quality across many projects quickly</li>
+<li>Linting tool is free</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>The Free Qube version of the product only supports scanning master branch</li>
+<li>Cloud based version can be costly</li>
+<li>Limited </li>
+</ul>
+<p>When decision made: 9/29/2020</p>
+<p>When decision will be revisited: 9/29/2022</p>
+"
