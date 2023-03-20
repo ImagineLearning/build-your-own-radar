@@ -1,5 +1,405 @@
 name,quadrant,ring,icon,description
-ELK (OpenDistro),Infrastructure,Invest,confident,"<p>ELK is the combination of Elasticsearch, Kibana and Logstash. See <a href="""">Elasticsearch</a> for more information on that but Logstash is a good ingester of data into Elasticsearch. This combination of services makes for a solid logging solution. Additionally, AWS has contributed back to the community with <a href=""https://opendistro.github.io/for-elasticsearch/"">OpenDistro</a> to fill the gaps in authentication and management of the system.</p>
+Jenkins,CI/CD,Hold,leaning,"<p><a href=""https://jenkins.io/"">Jenkins</a> is a build system. Built by the open source community it provides all the functionality needed for continuous integration.</p>
+<h3>Pros</h3>
+<ul>
+<li>Innumerable plugins</li>
+<li>Not the easiest interface to work with</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Sometimes low quality plugins due to open source community</li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Teamcity,CI/CD,Hold,leaning,"<p><a href=""https://www.jetbrains.com/teamcity/"">Teamcity</a> is a build system. Built by the folks at Jetbrains it provides all the functionality needed for continuous integration.</p>
+<h3>Pros</h3>
+<ul>
+<li>Solid interface</li>
+<li>Build templating</li>
+<li>Well built plugins built by the Teamcity team</li>
+<li>Great cloud build agent support on Kubernetes or using AWS AMIs</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Not as popular as Jenkins and so there are less plugins</li>
+<li>Costs money</li>
+</ul>
+<p>When decision made: 5/1/2020</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Spinnaker,CI/CD,Invest,leaning,"<p><a href=""https://www.spinnaker.io/"">Spinnaker</a> is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything, we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.</p>
+<h3>Pros</h3>
+<ul>
+<li>Visual workflow for releases</li>
+<li>Very customizable</li>
+<li>Constantly evolving</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Very resource heavy application</li>
+<li>Difficult configuration</li>
+<li>Occasional there are significant changes required to upgrade</li>
+<li>Not super well documented</li>
+</ul>
+<p>When decision made: 3/5/2020<br />
+When decision will be revisited: 01/01/2022</p>
+"
+Concourse CI,CI/CD,Invest,budding,"<p><a href=""https://concourse-ci.org/"">Concourse CI</a> is an open-source continuous thing-doer. Built on the simple mechanics of resources, tasks, and jobs, Concourse presents a general approach to automation that makes it great for CI/CD. Could potentially replace <a href="""">Spinnaker</a> for CI.</p>
+<h3>Pros</h3>
+<ul>
+<li>Native Kubernetes support</li>
+<li>CI is under source control by default</li>
+<li>Lightweight</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Fairly new system</li>
+<li>Lack of plugins (design decision)</li>
+</ul>
+<p>When decision made: 5/1/2020</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Octopus Deploy,CI/CD,Divest,none,"<p><a href=""https://octopus.com/"">Octopus Deploy</a> You already have a source control system and a build server. Octopus doesn’t replace these, we turbocharge them. We allow the build server to focus on what it does best: compiling code and running tests, while Octopus takes care of deploying and promoting releases between environments, automating deployments, and automating the operations tasks that keep the software running.</p>
+<h3>Pros</h3>
+<ul>
+<li>Focused on release management</li>
+<li>Works with both cloud deployments and on premise deployments</li>
+<li>Inexpensive</li>
+<li>UI is easy for engineers and others to control releases</li>
+<li>High level dashboard view of releases</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Requires an agent for on premise servers</li>
+<li>Configuration can get complicated very quickly</li>
+<li>Small community and very few plugins</li>
+</ul>
+<p>When decision made: 1/1/2020</p>
+<p>When decision will be revisited: 1/1/2022</p>
+"
+OpsGenie,Incident Response,Invest,lock,"<p><a href=""https://www.atlassian.com/software/opsgenie"">OpsGenie</a> is a modern incident management platform that ensures critical incidents are never missed, and actions are taken by the right people in the shortest possible time. Opsgenie receives alerts from your monitoring systems and custom applications and categorizes each alert based on importance and timing.</p>
+<h3>Pros</h3>
+<ul>
+<li>Integrates well with Atlassian toolsuite</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 1/1/2020</p>
+<p>When decision will be revisited: 1/1/2022</p>
+"
+Squadcast,Incident Response,Divest,none,"<p><a href=""https://www.squadcast.com"">Squadcast</a> unites on-call alerting and incident management along with Site Reliability Engineering (SRE) workflows under one hood and, in turn, automates human tasks efficiently.</p>
+<h3>Pros</h3>
+<ul>
+<li>User friendly incident management platform</li>
+<li>Designed for SREs</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+PagerDuty,Incident Response,Divest,none,"<p><a href=""https://www.pagerduty.com"">PagerDuty</a> aims to automate, orchestrate, and accelerate responses across your digital infrastructure.</p>
+<h3>Pros</h3>
+<ul>
+<li>Has incident response, runbook automation, on-call management tools, as well as AI oriented event intelligence and automation actions.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Splunk On-Call,Incident Response,Divest,none,"<p><a href=""https://www.splunk.com"">Splunk On-Call</a> helps developers, devops and operations teams make on-call suck less while reducing mean time to acknowledge and restore outages. Teams receive context-rich notifications and collaborate cross-functionally to empower fast, efficient incident resolution with reduced downtime. Stakeholders can gain visibility to critical incidents and steps taken to resolve incidents.</p>
+<h3>Pros</h3>
+<ul>
+<li>Get metadata-rich notifications direct to any device. Act, resolve, reroute, even snooze alerts right from the native iOS and Android apps.</li>
+<li>Automate time-sensitive actions, including escalations, war room and post incident reviews. Keep your teams focused on incident resolution.</li>
+<li>Manage alert noise and improve incident analysis. Easy-to-access reports on incident frequency, MTTA/MTTR and post-incident reviews enable fast resolution, reduce burnout and inspire innovation.</li>
+<li>Automate all the essentials including scheduling and escalation policies. From rotations to overrides, Splunk On-Call makes things easier.</li>
+<li>Identify the person with the right experience and expertise to work on any incident. Plus, streamline on-call schedules and escalations.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+AlertOps,Incident Response,Divest,none,"<p><a href=""https://www.alertops.com"">AlertOps</a> empowers the enterprise by taking the guesswork out of critical incident management with industry-leading response automation and incident alert management technology that delivers faster responsiveness, reduced downtime, improved operational efficiency and a better customer experience.</p>
+<h3>Pros</h3>
+<ul>
+<li>Go beyond managing incidents. Become an automation powerhouse.</li>
+<li>Enable IT Ops innovation.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Blameless,Incident Response,Divest,none,"<p><a href=""https://www.blameless.com"">Blameless</a> was founded to help teams adopt reliability practices with ease, and advance to a resilient culture.</p>
+<p>Our rich platform provides context, guardrails, and automation across key workflows. Efficiencies start with incident management and teams quickly become proactive by optimizing Service Level Objectives (SLOs) that map to the customer journey.</p>
+<h3>Pros</h3>
+<ul>
+<li>Incident Management</li>
+<li>Incident Response</li>
+<li>CommsFlow</li>
+<li>Incident Retrospectives</li>
+<li>Reliability Insights</li>
+<li>SLO Manager</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+OnPage,Incident Response,Divest,none,"<p><a href=""https://www.onpage.com"">OnPage</a> provides an Incident Alert Management platform that elevates critical notifications to the right person on call to remediate critical events.</p>
+<p>With Alert-Until-Read capabilities, dynamic digital schedules, escalation criteria and redundancies, OnPage ensures that critical alerts are never missed.</p>
+<h3>Pros</h3>
+<ul>
+<li>IT Incident Response</li>
+<li>On-Call Management</li>
+<li>Live Call Routing</li>
+<li>Mass notifications</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+PagerTree,Incident Response,Divest,none,"<p><a href=""https://www.pagertree.com"">PagerTree</a> empowers teams to share on-call responsibility and respond faster when incidents occur.</p>
+<p>PagerTree streamlines the on-call process by making it easy to schedule rotations, route incoming incidents, and alert the right team members every time.</p>
+<h3>Pros</h3>
+<ul>
+<li>On-Call Schedules</li>
+<li>Escalation Layers</li>
+<li>Reliable Notifications</li>
+<li>Performance Analytics</li>
+<li>Powerful Integrations</li>
+<li>Mobile Apps</li>
+<li>Live Call Routing</li>
+<li>Mass notifications</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Cabot,Incident Response,Divest,none,"<p><a href=""https://www.cabotapp.com"">Cabot</a> – Get alerted when services go down or metrics go crazy</p>
+<p><a href=""https://github.com/arachnys/cabot"">https://github.com/arachnys/cabot</a></p>
+<h3>Pros</h3>
+<ul>
+<li>Self-hosted</li>
+<li>Easily-deployable monitoring and alerts service</li>
+<li>Lightweight <a href="""">PagerDuty</a></li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+xMatters,Incident Response,Divest,none,"<p><a href=""https://www.xmatters.com"">xMatters</a> helps DevOps, SREs, and operations teams automate workflows, ensure infrastructure and applications are always working, and rapidly deliver products at scale. Our code-free workflow builder, adaptive approach to incident management, and real-time performance analytics all support a single goal: the happiness of your customers.</p>
+<h3>Pros</h3>
+<ul>
+<li>Protect against service issues</li>
+<li>Reduce operational headaches</li>
+<li>Deliver exceptional products faster</li>
+<li>Workflow automation</li>
+<li>Frictionless on-call</li>
+<li>Adaptive incident management</li>
+<li>Signal intelligence</li>
+<li>Actionable analytics</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Derdack,Incident Response,Divest,none,"<p><a href=""https://www.derdack.com"">Derdack</a> an innovation leader in digitization, automation and mobilization of alert notification and incident response workflows. Our mission is to enable the right people to take smart decisions and effective actions in critical situations – anywhere and any time.</p>
+<h3>Pros</h3>
+<ul>
+<li>Enterprise IT Alerting</li>
+<li>IT Managed Services</li>
+<li>On-call Duty Scheduling</li>
+<li>Anywhere Remediation</li>
+<li>Incident Management App</li>
+<li>Integrations</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+BigPanda,Incident Response,Divest,none,"<p><a href=""https://www.bigpanda.com"">BigPanda</a> transforms IT data into actionable intelligence and automation, enabling incident response teams to increase uptime, efficiency, and velocity.</p>
+<p>Built from the ground-up for complex IT environments, BigPanda helps organizations prevent and resolve IT outages through its innovative AIOps event correlation and automation platform.</p>
+<h3>Pros</h3>
+<ul>
+<li>Incident Intelligence</li>
+<li>Workflow Automation</li>
+<li>Unified Analytics</li>
+<li>Integrations</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+OpenDuty,Incident Response,Divest,none,"<p><a href=""https://github.com/ustream/openduty"">OpenDuty</a> is an open source alerting and incident escalation tool patterned after <a href="""">PagerDuty</a></p>
+<h3>Pros</h3>
+<ul>
+<li>XMPP, email, SMS, phone, Push and Slack notifications</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>In beta status but can be considered stable</li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+ngDesk,Incident Response,Divest,none,"<p><a href=""https://www.ngdesk.com"">ngDesk</a> includes support, sales, asset management, marketing and pager in an all-in-one application that is ready to go and easy to use.</p>
+<h3>Pros</h3>
+<ul>
+<li>Effective Ticket Tracking System</li>
+<li>All-In-One CRM</li>
+<li>Dashboards that Visually Showcase Data</li>
+<li>Manage communication with Prospects</li>
+<li>Keeps track of service issues</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Geneos,Incident Response,Divest,none,"<p><a href=""https://www.itrsgroup.com/products/geneos"">Geneos</a> provides full stack visibility across highly dynamic environments</p>
+<p>Geneos takes your IT infrastructure stack and instruments all the connections between systems, to give you a complete overview of your IT operations in real time. It also has more than 100 plugins that allow you to swiftly connect to different technologies with a minimum of coding. Run your applications dynamically, from on-demand and elastic server availability in cloud environments to containers, microservices and orchestrators, including Kubernetes and OpenShift. Set up your orchestrated environments on-prem, hybrid cloud or multi-cloud environments using Azure, AWS, Google Cloud Platform and more.</p>
+<h3>Pros</h3>
+<ul>
+<li>Advanced AIOps techniques enabled for anomaly detection and noise reduction</li>
+<li>Over 100 plugins and integrations</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+FireHydrant,Incident Response,Divest,none,"<p><a href=""https://firehydrant.com/"">Fire Hydrant</a> seeks to replace siloed knowledge, disparate tools, and homegrown processes with a fully automated, easy-to-use platform that integrates with the tools you already love.</p>
+<h3>Pros</h3>
+<ul>
+<li>Incident Management</li>
+<li>Process Automation</li>
+<li>Incident Communications</li>
+<li>Incident Retrospectives</li>
+<li>Incident Analytics</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+SLO exporter,Incident Response,Divest,none,"<p><a href=""https://github.com/seznam/slo-exporter"">SLO exporter</a> computes standardized SLI and SLO metrics based on events coming from various data sources.</p>
+<p>slo-exporter computes standardized Service Level Indicator (SLI) and Service Level Objectives (SLO) metrics based on events coming from various data sources. It follows principles from the SRE Workbook. With already prepared examples, Grafana dashboards, Prometheus recording rules and alerts, you can easily start to alert on SLO in your infrastructure.</p>
+<h3>Pros</h3>
+<ul>
+<li></li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+SLO Computer,Incident Response,Divest,none,"<p><a href=""https://github.com/last9/slo-computer"">SLO Computer</a> is building a sandbox for our DevOps and SRE community - SLO computer - a product that makes setting and monitoring SLOs for all your services intuitively seamless and blazingly fast.</p>
+<p>“SLOs, Error windows and alerts are complicated. Here’s an attempt to make it easy.”</p>
+<h3>Pros</h3>
+<ul>
+<li></li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Rootly,Incident Response,Divest,none,"<p><a href=""https://rootly.com"">Rootly</a> is an incident management platform and Slackbot designed to help companies resolve incidents faster by automating manual admin tasks and providing insight to prevent them in the future</p>
+<h3>Pros</h3>
+<ul>
+<li>Manage incidents directly from Slack</li>
+<li>Say goodbye to manual copy-paste timelines</li>
+<li>Encode entire incident process.</li>
+<li>Integrate with favorite tools</li>
+<li>Reduce context switching</li>
+<li>Faster retrospectives</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Grafana OnCall,Incident Response,Divest,none,"<p><a href=""https://grafana.com/oss/oncall/"">Grafana OnCall</a> is an open source, easy-to-use on-call management tool built to help teams improve their collaboration and resolve incidents faster.</p>
+<p>Grafana OnCall (formerly known as Amixr) was started in 2018 at Amixr Inc., which Grafana Labs acquired in 2021. Launched on Grafana Cloud in late 2021 and open sourced in 2022 for users needing self-managed and on-premises deployments, Grafana OnCall provides an on-call management solution that is simple to use, accessible to everyone, and allows engineers to actually sleep well at night knowing that only the relevant notifications will reach them. Grafana Labs uses Grafana OnCall to run its own cloud services.</p>
+<h3>Pros</h3>
+<ul>
+<li>On-call management</li>
+<li>Detection</li>
+<li>Alert grouping and routing</li>
+<li>Notification and collaboration</li>
+<li>Remediation</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Keep,Incident Response,Divest,none,"<p><a href=""https://github.com/keephq/keep"">Keep</a> a simple CLI tool that contains everything you need to start creating Alerts.</p>
+<h3>Pros</h3>
+<ul>
+<li>Simple and intuitive (GitHub actions-like) syntax.</li>
+<li>Declarative alerting that can be easily managed and versioned in your version control and service repository.</li>
+<li>Alerts from multiple data sources for added context and insights.</li>
+<li>Freedom from vendor lock-in, making it easier to switch to a different observability tool if and when needed.</li>
+<li>100% open sourced, free forever</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li></li>
+</ul>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Elastic Stack,Infrastructure,Invest,confident,"<p>Elastic Stack (formerly known as ELK) is the combination of Elasticsearch, Kibana and Logstash. See <a href=""https://www.elastic.co/what-is/elk-stack"">Elasticsearch</a> for more information on that but Logstash is a good ingester of data into Elasticsearch. This combination of services makes for a solid logging solution. Additionally, AWS has contributed back to the community with <a href=""https://opendistro.github.io/for-elasticsearch/"">OpenDistro</a> to fill the gaps in authentication and management of the system.</p>
 <h3>Pros</h3>
 <ul>
 <li>Can handle large amounts of log data</li>
@@ -50,7 +450,7 @@ AWS Lambda (event processing),Infrastructure,Invest,confident,"<p>AWS Lambda fun
 <h3>Pros</h3>
 <ul>
 <li>Very cheap, insanely cheap</li>
-<li>Effectively infinite scale</li>
+<li>Effectively infinitely scalable</li>
 </ul>
 <h3>Cons</h3>
 <ul>
@@ -108,7 +508,7 @@ Jira,Infrastructure,Invest,lock,"<p><a href=""https://www.atlassian.com/software
 <h3>Pros</h3>
 <ul>
 <li>Can use multiple workflows to accommodate different agile practices</li>
-<li>Not the easiest interface to work with’</li>
+<li>Not the easiest interface to work with</li>
 <li>Cloud hosted</li>
 <li>Good plugin support</li>
 </ul>
@@ -138,26 +538,6 @@ SonarQube,Infrastructure,Invest,confident,"<p><a href=""https://www.sonarqube.or
 </ul>
 <p>When decision made: 9/29/2020</p>
 <p>When decision will be revisited: 9/22/2022</p>
-"
-Prometheus + Grafana,Observability,Invest,confident,"<p><a href=""https://prometheus.io/"">Prometheus</a> is an open source time series database. Prometheus implements a pull model for metrics rather than a push model. Meaning your applications need to have an endpoint, typically <code>/metrics</code> that Prometheus can scrape metrics from.</p>
-<p><a href=""https://grafana.com/"">Grafana</a> is an open source visualization tool that can connect to many different data sources to visualize data. Grafana also can provide alerting.</p>
-<p>Because one is the data source and the other the visualization we are combining the two of them here.</p>
-<h3>Pros</h3>
-<ul>
-<li>No cost</li>
-<li>Large community support</li>
-<li>Very customizable</li>
-<li>Many open source libraries to easily add a metrics endpoint to any type of application</li>
-<li>Can integrate with Elasticsearch and OpsGenie</li>
-<li>Community made dashboards available</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>We administer these services ourselves</li>
-<li>Lack of cohesion sometimes</li>
-</ul>
-<p>When decision made: 3/5/2020<br />
-When decision will be revisited: 01/01/2022</p>
 "
 Velero (Heptio Ark),Infrastructure,Invest,confident,"<p><a href=""https://velero.io/"">Velero</a> formerly Heptio Ark is an automated backup solution native for Kubernetes. Velero automatically backs up your k8s configuration and takes snapshots of persistent volumes if necessary.</p>
 <h3>Pros</h3>
@@ -189,7 +569,7 @@ In some cases, other technologies like Spark could be a prefered means to query 
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
-S3,Infrastructure,Invest,confident,"<p>S3 is a distributed file system. It is highly scalable and has many uses. Recommended usages are diverse. One such scenario: it is the recommended WNE technology for data lakes including two types of zones:</p>
+S3,Infrastructure,Invest,confident,"<p>S3 is a distributed file system. It is highly scalable and has many uses. Recommended usages are diverse. One such scenario: it is the recommended IL technology for data lakes including two types of zones:</p>
 <ol>
 <li>Raw (such as a copy of operational data stores or as the history of operational events)</li>
 <li>Curated/gold (post cleanse and transform)</li>
@@ -245,68 +625,25 @@ EKS,Infrastructure,Trial,budding,"<p><a href="""">Kubernetes</a> is the best con
 <p>When decision made: 5/1/2021</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Jenkins,CI/CD,Hold,leaning,"<p><a href=""https://jenkins.io/"">Jenkins</a> is a build system. Built by the open source community it provides all the functionality needed for continuous integration.</p>
+Terraform,Infrastructure,Trial,leaning,"<p><a href=""https://www.terraform.io/"">Terraform</a> is an open source tool to use <code>Infrastructure as Code</code> principles. As your infrastructure is created you can always make modifications and deploy all of your infra like you would with code.</p>
 <h3>Pros</h3>
 <ul>
-<li>Innumerable plugins</li>
-<li>Not the easiest interface to work with</li>
+<li>Syntactically superior to other tools</li>
+<li>Free</li>
+<li>Active community</li>
+<li>Can be used with any type of infra, not just AWS</li>
+<li>Leads to repeatable infra with less errors</li>
 </ul>
 <h3>Cons</h3>
 <ul>
-<li>Sometimes low quality plugins due to open source community</li>
+<li>Doesn’t provided direct drift detection</li>
+<li>IAM access is required to use Terraform effectively</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Teamcity,CI/CD,Hold,leaning,"<p><a href=""https://www.jetbrains.com/teamcity/"">Teamcity</a> is a build system. Built by the folks at Jetbrains it provides all the functionality needed for continuous integration.</p>
-<h3>Pros</h3>
-<ul>
-<li>Solid interface</li>
-<li>Build templating</li>
-<li>Well built plugins built by the Teamcity team</li>
-<li>Great cloud build agent support on Kubernetes or using AWS AMIs</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>Not as popular as Jenkins and so there are less plugins</li>
-<li>Costs money</li>
-</ul>
+<p>Terraform workspaces should be employed to separate different environments.<br />
+Replaces <a href=""https://aws.amazon.com/cloudformation/"">AWS Cloud Formation</a></p>
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Spinnaker,CI/CD,Invest,leaning,"<p><a href=""https://www.spinnaker.io/"">Spinnaker</a> is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.</p>
-<h3>Pros</h3>
-<ul>
-<li>Visual workflow for releases</li>
-<li>Very customizable</li>
-<li>Constantly evolving</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>Very resource heavy application</li>
-<li>Difficult configuration</li>
-<li>Occasional there are significant changes required to upgrade</li>
-<li>Not super well documented</li>
-</ul>
-<p>When decision made: 3/5/2020<br />
-When decision will be revisited: 01/01/2022</p>
-"
-Concourse CI,CI/CD,Trial,budding,"<p><a href=""https://concourse-ci.org/"">Concourse CI</a> is an open-source continuous thing-doer. Built on the simple mechanics of resources, tasks, and jobs, Concourse presents a general approach to automation that makes it great for CI/CD. Could potentially replace <a href="""">Spinnaker</a> for CI.</p>
-<h3>Pros</h3>
-<ul>
-<li>Native Kubernetes support</li>
-<li>CI is under source control by default</li>
-<li>Lightweight</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>Fairly new system</li>
-<li>Lack of plugins (design decision)</li>
-</ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Terraform (Provisioning),Infrastructure,Trial,leaning,
 AWS Cloud Formation,Infrastructure,Trial,leaning,"<p><a href=""https://aws.amazon.com/cloudformation/"">CloudFormation</a> iprovides a common language for you to model and provision AWS and third party application resources in your cloud environment. AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This gives you a single source of truth for your AWS and third party resources.</p>
 <h3>Pros</h3>
 <ul>
@@ -336,7 +673,7 @@ Harbor,Infrastructure,Trial,budding,"<p><a href=""https://goharbor.io"">Harbor</
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Istio,Infrastructure,Invest,budding,"<p><a href=""https://istio.io/"">Istio</a> helps reduce the complexity deployments, and eases the strain on your development teams. It is a completely open source service mesh that layers transparently onto existing distributed applications.</p>
+Istio,Infrastructure,Invest,confident,"<p><a href=""https://istio.io/"">Istio</a> helps reduce the complexity deployments, and eases the strain on your development teams. It is a completely open source service mesh that layers transparently onto existing distributed applications.</p>
 <h3>Pros</h3>
 <ul>
 <li>Automatic load balancing</li>
@@ -383,7 +720,7 @@ ECR,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/ecr/"">EC
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-AWS Api Gateway,Infrastructure,Hold,none,"<p><a href=""https://aws.amazon.com/api-gateway/"">Api Gateway</a> is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the “front door” for applications to access data, business logic, or functionality from your backend services. Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.</p>
+AWS Api Gateway,Infrastructure,Divest,none,"<p><a href=""https://aws.amazon.com/api-gateway/"">Api Gateway</a> is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the “front door” for applications to access data, business logic, or functionality from your backend services. Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.</p>
 <p>Generally speaking Api Gateway is a cool technology but there is a strong preference to run appliations on our existing <a href="""">Kubernetes</a> clusters to take advantage of free resources that are already available.</p>
 <h3>Pros</h3>
 <ul>
@@ -448,21 +785,6 @@ ECS,Infrastructure,Divest,none,"<p><a href=""https://aws.amazon.com/ecs/"">Elast
 <p>While ECS and Kubernetes are very similar <a href="""">Kubernetes</a> is favored heavily.</p>
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
-"
-Datadog,Observability,Hold,none,"<p><a href=""https://www.datadoghq.com/"">Datadog</a> is a hosted platform for monitoring and analytics. Datadog enables easy instrumentation of many types of applications and infrastructure.</p>
-<h3>Pros</h3>
-<ul>
-<li>Very quick to implement</li>
-<li>Lots of canned reports and dashboards</li>
-<li>Compared to other providers they have been cheaper</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>No Azure support</li>
-<li>Dashboards aren’t very straightforward</li>
-</ul>
-<p>When decision made: 3/5/2020</p>
-<p>When decision will be revisited: 01/01/2022</p>
 "
 TFS (Azure DevOps Server),Infrastructure,Divest,none,"<p><a href=""https://azure.microsoft.com/en-us/services/devops/server/"">TFS (Azure DevOps Server)</a> is replaced by Azure DevOps server. TFS historically attempted to capture all venues of the software development process. Project management, source control, and everything in between.</p>
 <h3>Pros</h3>
@@ -560,26 +882,57 @@ Gitlab,Infrastructure,Divest,none,"<p>With <a href=""https://about.gitlab.com/""
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
-Octopus Deploy,Infrastructure,Divest,none,"<p><a href=""https://octopus.com/"">Octopus Deploy</a> You already have a source control system and a build server. Octopus doesn’t replace these, we turbocharge them. We allow the build server to focus on what it does best: compiling code and running tests, while Octopus takes care of deploying and promoting releases between environments, automating deployments, and automating the operations tasks that keep the software running.</p>
+AWS CodePipeline,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/codepipeline/"">AWS CodePipeline</a> is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates.</p>
 <h3>Pros</h3>
 <ul>
-<li>Focused on release management</li>
-<li>Works with both cloud deployments and on premise deployments</li>
-<li>Inexpensive</li>
-<li>UI is easy for engineers and others to control releases</li>
-<li>High level dashboard view of releases</li>
+<li>Part of AWS infrastructure</li>
+<li>Easily integrates with Amazon Simple Notification Service (SNS)</li>
+<li>Access control management via Identity and Access Management (IAM)</li>
+<li>Define and update pipeline structure with declarative JSON</li>
 </ul>
 <h3>Cons</h3>
 <ul>
-<li>Requires an agent for on premise servers</li>
-<li>Configuration can get complicated very quickly</li>
-<li>Small community and very few plugins</li>
+<li></li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
+<p>When decision made: 5/1/2021</p>
+<p>When decision will be revisited: 5/1/2021</p>
 "
-AWS CodePipeline,Infrastructure,Invest,budding,
-New Relic,Observability,Invest,confident,"<p><a href=""https://newrelic.com/"">New Relic</a> is an analytics package that can be used to gain insights about your application. NewRelic can be depoyed as an Application Performance Monitor (APM) or to your infrastructure for insights into how the system is performing as a whole. New Relic should be used instead of <a href="""">Datadog</a>.</p>
+Prometheus + Grafana,Observability,Divest,confident,"<p><a href=""https://prometheus.io/"">Prometheus</a> is an open source time series database. Prometheus implements a pull model for metrics rather than a push model. Meaning your applications need to have an endpoint, typically <code>/metrics</code> that Prometheus can scrape metrics from.</p>
+<p><a href=""https://grafana.com/"">Grafana</a> is an open source visualization tool that can connect to many different data sources to visualize data. Grafana also can provide alerting.</p>
+<p>Because one is the data source and the other the visualization we are combining the two of them here.</p>
+<h3>Pros</h3>
+<ul>
+<li>No cost</li>
+<li>Large community support</li>
+<li>Very customizable</li>
+<li>Many open source libraries to easily add a metrics endpoint to any type of application</li>
+<li>Can integrate with Elasticsearch and OpsGenie</li>
+<li>Community made dashboards available</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>We administer these services ourselves</li>
+<li>Lack of cohesion sometimes</li>
+</ul>
+<p>When decision made: 3/5/2020<br />
+When decision will be revisited: 01/01/2022</p>
+"
+Datadog,Observability,Hold,none,"<p><a href=""https://www.datadoghq.com/"">Datadog</a> is a hosted platform for monitoring and analytics. Datadog enables easy instrumentation of many types of applications and infrastructure.</p>
+<h3>Pros</h3>
+<ul>
+<li>Very quick to implement</li>
+<li>Lots of canned reports and dashboards</li>
+<li>Compared to other providers they have been cheaper</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>No Azure support</li>
+<li>Dashboards aren’t very straightforward</li>
+</ul>
+<p>When decision made: 3/5/2020</p>
+<p>When decision will be revisited: 01/01/2022</p>
+"
+New Relic,Observability,Invest,confident,"<p><a href=""https://newrelic.com/"">New Relic</a> is an analytics package that can be used to gain insights about your application. NewRelic can be deployed as an Application Performance Monitor (APM) or to your infrastructure for insights into how the system is performing as a whole. New Relic should be used instead of <a href="""">Datadog</a>.</p>
 <h3>Pros</h3>
 <ul>
 <li>Works across Azure and NewRelic</li>
@@ -597,7 +950,7 @@ New Relic,Observability,Invest,confident,"<p><a href=""https://newrelic.com/"">N
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2022 (under 2 year contract)</p>
 "
-BugSnag,Observability,Invest,confident,"<p><a href=""https://www.bugsnag.com/"">BugSnag</a> is an error-monitoring tool that allows your developers to identify, prioritize and replicate bugs in a time-efficient and enjoyable manner. BugSnag creates an ownership mentality with all developers by enabling them to proactively see the effects of their code. This helps them address the issues before it escalates, creating a joyful experience for both customers and engineers.</p>
+BugSnag,Observability,Divest,confident,"<p><a href=""https://www.bugsnag.com/"">BugSnag</a> is an error-monitoring tool that allows your developers to identify, prioritize and replicate bugs in a time-efficient and enjoyable manner. BugSnag creates an ownership mentality with all developers by enabling them to proactively see the effects of their code. This helps them address the issues before it escalates, creating a joyful experience for both customers and engineers.</p>
 <h3>Pros</h3>
 <ul>
 <li>Full-stack monitoring on an unlimited number of web, desktop, and server applications</li>
@@ -611,7 +964,7 @@ BugSnag,Observability,Invest,confident,"<p><a href=""https://www.bugsnag.com/"">
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
-Sentry.io,Observability,Hold,budding,"<p><a href=""https://www.sentry.io/"">Sentry.io</a> is a performance monitoring software that every developer diagnose, fix, and optimize the performance of their code. With Sentry, developers around the world save time, energy, and probably a few therapy sessions.</p>
+Sentry.io,Observability,Invest,budding,"<p><a href=""https://www.sentry.io/"">Sentry.io</a> is a performance monitoring software that every developer diagnose, fix, and optimize the performance of their code. With Sentry, developers around the world save time, energy, and probably a few therapy sessions.</p>
 <h3>Pros</h3>
 <ul>
 <li>Bug tracking/error monitoring</li>
@@ -626,41 +979,14 @@ Sentry.io,Observability,Hold,budding,"<p><a href=""https://www.sentry.io/"">Sent
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
-Octopus Deploy,CI/CD,Divest,none,"<p><a href=""https://octopus.com/"">Octopus Deploy</a> You already have a source control system and a build server. Octopus doesn’t replace these, we turbocharge them. We allow the build server to focus on what it does best: compiling code and running tests, while Octopus takes care of deploying and promoting releases between environments, automating deployments, and automating the operations tasks that keep the software running.</p>
+Kibana,Observability,Hold,none,"<p><a href=""https://www.elastic.co/kibana/"">Kibana</a> is a source-available data visualization dashboard software for Elasticsearch, whose free and open source fork in OpenSearch is OpenSearch Dashboards.  Kibana provides visualization capabilities on top of the content indexed on an Elasticsearch cluster. Users can create bar, line and scatter plots, or pie charts and maps on top of large volumes of data.[4]</p>
+<p>Kibana also provides a presentation tool, referred to as Canvas, that allows users to create slide decks that pull live data directly from Elasticsearch.  See also <a href=""https://www.elastic.co/what-is/elk-stack"">Elastic Stack</a>.</p>
+<p>IL has 53 dashboards created in Nonprod</p>
 <h3>Pros</h3>
 <ul>
-<li>Focused on release management</li>
-<li>Works with both cloud deployments and on premise deployments</li>
-<li>Inexpensive</li>
-<li>UI is easy for engineers and others to control releases</li>
-<li>High level dashboard view of releases</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>Requires an agent for on premise servers</li>
-<li>Configuration can get complicated very quickly</li>
-<li>Small community and very few plugins</li>
-</ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
-OpsGenie,Incident Response,Invest,lock,"<p><a href=""https://www.atlassian.com/software/opsgenie"">OpsGenie</a> is a modern incident management platform that ensures critical incidents are never missed, and actions are taken by the right people in the shortest possible time. Opsgenie receives alerts from your monitoring systems and custom applications and categorizes each alert based on importance and timing.</p>
-<h3>Pros</h3>
-<ul>
-<li>Integrates well with Atlassian toolsuite</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
-Squadcast,Incident Response,Hold,none,"<p><a href=""https://www.squadcast.com"">Squadcast</a> unites on-call alerting and incident management along with Site Reliability Engineering (SRE) workflows under one hood and, in turn, automates human tasks efficiently.</p>
-<h3>Pros</h3>
-<ul>
-<li>User friendly incident management platform</li>
-<li>Designed for SREs</li>
+<li>Visualize with Kibana Lens</li>
+<li>Analyze search relevance metrics with dashboards and machine learning</li>
+<li>Improve results with search analytics</li>
 </ul>
 <h3>Cons</h3>
 <ul>
@@ -669,278 +995,52 @@ Squadcast,Incident Response,Hold,none,"<p><a href=""https://www.squadcast.com"">
 <p>When decision made: 5/1/2021</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-PagerDuty,Incident Response,Hold,none,"<p><a href=""https://www.pagerduty.com"">PagerDuty</a> aims to automate, orchestrate, and accelerate responses across your digital infrastructure.</p>
+LogRocket,Observability,Hold,none,"<p><a href=""https://www.logrocket.com/"">LogRocket</a> lets you replay what users do on your site, helping you reproduce bugs and fix issues faster.</p>
 <h3>Pros</h3>
 <ul>
-<li>Has incident response, runbook automation, on-call management tools, as well as AI oriented event intelligence and automation actions.</li>
+<li>Quickly understand errors</li>
+<li>Support users back and forth</li>
+<li>Learn where users are getting stuck</li>
+<li>Good React integration</li>
 </ul>
 <h3>Cons</h3>
 <ul>
-<li></li>
+<li>Can be rather costly</li>
+<li>Introduces overhead to the web application</li>
+</ul>
+<p>When decision made: 11/19/2020</p>
+<p>When decision will be revisited: 5/1/2021</p>
+"
+Kiali,Observability,Hold,none,"<p><a href=""https://github.com/kiali/kiali"">Kiali</a> is a management console for Istio service mesh. Kiali can be quickly installed as an Istio add-on, or trusted as a part of your production environment.</p>
+<h3>Pros</h3>
+<ul>
+<li>Open source</li>
+<li>Backend oriented</li>
+<li>Observability tool for microservice-based applications running in Kubernetes</li>
+<li>Topology view of components of microservice based application, including services, endpoints, communications between them</li>
+<li>Traffic management - request rates, response times, error rates</li>
+<li>Configuration management - Centralized view of configuration, environment variables, secrets, labels</li>
+<li>Health monitoring - Status of individual services, endpoints</li>
+<li>Integrates with Istio (open source mesh service for microservices based applications) to provide additional features like traffic management and security</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Limited data visualization options (not as advanced as other tools)</li>
+<li>Limited alerting (not as advanced as other tools)</li>
+<li>No built in log management</li>
+<li>Doesn’t integrate with non Kubernetes environment</li>
+<li>No native security features, like role-based access control or encryption</li>
 </ul>
 <p>When decision made: 5/1/2021</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Splunk On-Call,Incident Response,Hold,none,"<p><a href=""https://www.splunk.com"">Splunk On-Call</a> helps developers, devops and operations teams make on-call suck less while reducing mean time to acknowledge and restore outages. Teams receive context-rich notifications and collaborate cross-functionally to empower fast, efficient incident resolution with reduced downtime. Stakeholders can gain visibility to critical incidents and steps taken to resolve incidents.</p>
+Argus,Observability,Trial,none,"<p><a href=""https://github.com/salesforce/Argus/wiki"">Argus</a> allows engineering teams to collect, store, annotate, and alert on massive amounts of time-series data, using a scalable, resource-protected architecture.</p>
 <h3>Pros</h3>
 <ul>
-<li>Get metadata-rich notifications direct to any device. Act, resolve, reroute, even snooze alerts right from the native iOS and Android apps.</li>
-<li>Automate time-sensitive actions, including escalations, war room and post incident reviews. Keep your teams focused on incident resolution.</li>
-<li>Manage alert noise and improve incident analysis. Easy-to-access reports on incident frequency, MTTA/MTTR and post-incident reviews enable fast resolution, reduce burnout and inspire innovation.</li>
-<li>Automate all the essentials including scheduling and escalation policies. From rotations to overrides, Splunk On-Call makes things easier.</li>
-<li>Identify the person with the right experience and expertise to work on any incident. Plus, streamline on-call schedules and escalations.</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-AlertOps,Incident Response,Hold,none,"<p><a href=""https://www.alertops.com"">AlertOps</a> empowers the enterprise by taking the guesswork out of critical incident management with industry-leading response automation and incident alert management technology that delivers faster responsiveness, reduced downtime, improved operational efficiency and a better customer experience.</p>
-<h3>Pros</h3>
-<ul>
-<li>Go beyond managing incidents. Become an automation powerhouse.</li>
-<li>Enable IT Ops innovation.</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Blameless,Incident Response,Hold,none,"<p><a href=""https://www.blameless.com"">Blameless</a> was founded to help teams adopt reliability practices with ease, and advance to a resilient culture.</p>
-<p>Our rich platform provides context, guardrails, and automation across key workflows. Efficiencies start with incident management and teams quickly become proactive by optimizing Service Level Objectives (SLOs) that map to the customer journey.</p>
-<h3>Pros</h3>
-<ul>
-<li>Incident Management</li>
-<li>Incident Response</li>
-<li>CommsFlow</li>
-<li>Incident Retrospectives</li>
-<li>Reliability Insights</li>
-<li>SLO Manager</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-OnPage,Incident Response,Hold,none,"<p><a href=""https://www.onpage.com"">OnPage</a> provides an Incident Alert Management platform that elevates critical notifications to the right person on call to remediate critical events.</p>
-<p>With Alert-Until-Read capabilities, dynamic digital schedules, escalation criteria and redundancies, OnPage ensures that critical alerts are never missed.</p>
-<h3>Pros</h3>
-<ul>
-<li>IT Incident Response</li>
-<li>On-Call Management</li>
-<li>Live Call Routing</li>
-<li>Mass notifications</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-PagerTree,Incident Response,Hold,none,"<p><a href=""https://www.pagertree.com"">PagerTree</a> empowers teams to share on-call responsibility and respond faster when incidents occur.</p>
-<p>PagerTree streamlines the on-call process by making it easy to schedule rotations, route incoming incidents, and alert the right team members every time.</p>
-<h3>Pros</h3>
-<ul>
-<li>On-Call Schedules</li>
-<li>Escalation Layers</li>
-<li>Reliable Notifications</li>
-<li>Performance Analytics</li>
-<li>Powerful Integrations</li>
-<li>Mobile Apps</li>
-<li>Live Call Routing</li>
-<li>Mass notifications</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Cabot,Incident Response,Hold,none,"<p><a href=""https://www.cabotapp.com"">Cabot</a> – Get alerted when services go down or metrics go crazy</p>
-<p><a href=""https://github.com/arachnys/cabot"">https://github.com/arachnys/cabot</a></p>
-<h3>Pros</h3>
-<ul>
-<li>Self-hosted</li>
-<li>Easily-deployable monitoring and alerts service</li>
-<li>Lightweight <a href="""">PagerDuty</a></li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-xMatters,Incident Response,Hold,none,"<p><a href=""https://www.xmatters.com"">xMatters</a> helps DevOps, SREs, and operations teams automate workflows, ensure infrastructure and applications are always working, and rapidly deliver products at scale. Our code-free workflow builder, adaptive approach to incident management, and real-time performance analytics all support a single goal: the happiness of your customers.</p>
-<h3>Pros</h3>
-<ul>
-<li>Protect against service issues</li>
-<li>Reduce operational headaches</li>
-<li>Deliver exceptional products faster</li>
-<li>Workflow automation</li>
-<li>Frictionless on-call</li>
-<li>Adaptive incident management</li>
-<li>Signal intelligence</li>
-<li>Actionable analytics</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Derdack Enterprise Alert,Incident Response,Hold,none,
-BigPanda,Incident Response,Hold,none,"<p><a href=""https://www.bigpanda.com"">BigPanda</a> transforms IT data into actionable intelligence and automation, enabling incident response teams to increase uptime, efficiency, and velocity.</p>
-<p>Built from the ground-up for complex IT environments, BigPanda helps organizations prevent and resolve IT outages through its innovative AIOps event correlation and automation platform.</p>
-<h3>Pros</h3>
-<ul>
-<li>Incident Intelligence</li>
-<li>Workflow Automation</li>
-<li>Unified Analytics</li>
-<li>Integrations</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-OpenDuty,Incident Response,Hold,none,"<p><a href=""https://github.com/ustream/openduty"">OpenDuty</a> is an open source alerting and incident escalation tool patterned after <a href="""">PagerDuty</a></p>
-<h3>Pros</h3>
-<ul>
-<li>XMPP, email, SMS, phone, Push and Slack notifications</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li>In beta status but can be considered stable</li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-ngDesk,Incident Response,Hold,none,"<p><a href=""https://www.ngdesk.com"">ngDesk</a> includes support, sales, asset management, marketing and pager in an all-in-one application that is ready to go and easy to use.</p>
-<h3>Pros</h3>
-<ul>
-<li>Effective Ticket Tracking System</li>
-<li>All-In-One CRM</li>
-<li>Dashboards that Visually Showcase Data</li>
-<li>Manage communication with Prospects</li>
-<li>Keeps track of service issues</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Geneos,Incident Response,Hold,none,"<p><a href=""https://www.itrsgroup.com/products/geneos"">Geneos</a> provides full stack visibility across highly dynamic environments</p>
-<p>Geneos takes your IT infrastructure stack and instruments all the connections between systems, to give you a complete overview of your IT operations in real time. It also has more than 100 plugins that allow you to swiftly connect to different technologies with a minimum of coding. Run your applications dynamically, from on-demand and elastic server availability in cloud environments to containers, microservices and orchestrators, including Kubernetes and OpenShift. Set up your orchestrated environments on-prem, hybrid cloud or multi-cloud environments using Azure, AWS, Google Cloud Platform and more.</p>
-<h3>Pros</h3>
-<ul>
-<li>Advanced AIOps techniques enabled for anomaly detection and noise reduction</li>
-<li>Over 100 plugins and integrations</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-FireHydrant,Incident Response,Hold,none,"<p><a href=""https://firehydrant.com/"">Fire Hydrant</a> seeks to replace siloed knowledge, disparate tools, and homegrown processes with a fully automated, easy-to-use platform that integrates with the tools you already love.</p>
-<h3>Pros</h3>
-<ul>
-<li>Incident Management</li>
-<li>Process Automation</li>
-<li>Incident Communications</li>
-<li>Incident Retrospectives</li>
-<li>Incident Analytics</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-SLO exporter,Incident Response,Hold,none,"<p><a href=""https://github.com/seznam/slo-exporter"">SLO exporter</a> computes standardized SLI and SLO metrics based on events coming from various data sources.</p>
-<p>slo-exporter computes standardized Service Level Indicator (SLI) and Service Level Objectives (SLO) metrics based on events coming from various data sources. It follows principles from the SRE Workbook. With already prepared examples, Grafana dashboards, Prometheus recording rules and alerts, you can easily start to alert on SLO in your infrastructure.</p>
-<h3>Pros</h3>
-<ul>
-<li></li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-SLO Computer,Incident Response,Hold,none,"<p><a href=""https://github.com/last9/slo-computer"">SLO Computer</a> is building a sandbox for our DevOps and SRE community - SLO computer - a product that makes setting and monitoring SLOs for all your services intuitively seamless and blazingly fast.</p>
-<p>“SLOs, Error windows and alerts are complicated. Here’s an attempt to make it easy.”</p>
-<h3>Pros</h3>
-<ul>
-<li></li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Rootly,Incident Response,Hold,none,"<p><a href=""https://rootly.com"">Rootly</a> is an incident management platform and Slackbot designed to help companies resolve incidents faster by automating manual admin tasks and providing insight to prevent them in the future</p>
-<h3>Pros</h3>
-<ul>
-<li>Manage incidents directly from Slack</li>
-<li>Say goodbye to manual copy-paste timelines</li>
-<li>Encode entire incident process.</li>
-<li>Integrate with favorite tools</li>
-<li>Reduce context switching</li>
-<li>Faster retrospectives</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Grafana OnCall,Incident Response,Hold,none,"<p><a href=""https://grafana.com/oss/oncall/"">Grafana OnCall</a> is an open source, easy-to-use on-call management tool built to help teams improve their collaboration and resolve incidents faster.</p>
-<p>Grafana OnCall (formerly known as Amixr) was started in 2018 at Amixr Inc., which Grafana Labs acquired in 2021. Launched on Grafana Cloud in late 2021 and open sourced in 2022 for users needing self-managed and on-premises deployments, Grafana OnCall provides an on-call management solution that is simple to use, accessible to everyone, and allows engineers to actually sleep well at night knowing that only the relevant notifications will reach them. Grafana Labs uses Grafana OnCall to run its own cloud services.</p>
-<h3>Pros</h3>
-<ul>
-<li>On-call management</li>
-<li>Detection</li>
-<li>Alert grouping and routing</li>
-<li>Notification and collaboration</li>
-<li>Remediation</li>
-</ul>
-<h3>Cons</h3>
-<ul>
-<li></li>
-</ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Keep,Incident Response,Hold,none,"<p><a href=""https://github.com/keephq/keep"">Keep</a> a simple CLI tool that contains everything you need to start creating Alerts.</p>
-<h3>Pros</h3>
-<ul>
-<li>Simple and intuitive (GitHub actions-like) syntax.</li>
-<li>Declarative alerting that can be easily managed and versioned in your version control and service repository.</li>
-<li>Alerts from multiple data sources for added context and insights.</li>
-<li>Freedom from vendor lock-in, making it easier to switch to a different observability tool if and when needed.</li>
-<li>100% open sourced, free forever</li>
+<li>Annotations: Putting Data in Context</li>
+<li>Alerting: When the Metrics Hit the Fan</li>
+<li>Resource Protection: Call the Warden</li>
+<li>Scalable, All the Way Down</li>
 </ul>
 <h3>Cons</h3>
 <ul>

@@ -1,4 +1,4 @@
-[New Relic](https://newrelic.com/) is an analytics package that can be used to gain insights about your application. NewRelic can be depoyed as an Application Performance Monitor (APM) or to your infrastructure for insights into how the system is performing as a whole. New Relic should be used instead of [Datadog]().
+[New Relic](https://newrelic.com/) is an analytics package that can be used to gain insights about your application. NewRelic can be deployed as an Application Performance Monitor (APM) or to your infrastructure for insights into how the system is performing as a whole. New Relic should be used instead of [Datadog]().
 
 ### Pros
 * Works across Azure and NewRelic

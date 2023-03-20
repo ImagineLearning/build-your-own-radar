@@ -12,7 +12,7 @@
 * IAM access is required to use Terraform effectively
 
 Terraform workspaces should be employed to separate different environments. 
-Replaces [Cloud Formation]()
+Replaces [AWS Cloud Formation](https://aws.amazon.com/cloudformation/)
 
 When decision made: 5/1/2020
 

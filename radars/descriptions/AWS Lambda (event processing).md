@@ -2,7 +2,7 @@ AWS Lambda functions are a great way to run snippets of code without worrying ab
 
 ### Pros
 * Very cheap, insanely cheap
-* Effectively infinite scale
+* Effectively infinitely scalable
 
 ### Cons
 * Not a good fit for IO bound operations

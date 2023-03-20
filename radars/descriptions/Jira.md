@@ -2,7 +2,7 @@
 
 ### Pros
 * Can use multiple workflows to accommodate different agile practices
-* Not the easiest interface to work with'
+* Not the easiest interface to work with
 * Cloud hosted
 * Good plugin support
 
