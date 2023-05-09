@@ -1,4 +1,4 @@
-[Spinnaker](https://www.spinnaker.io/) is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.
+[Spinnaker](https://www.spinnaker.io/) is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything, we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.
 
 ### Pros
 * Visual workflow for releases
