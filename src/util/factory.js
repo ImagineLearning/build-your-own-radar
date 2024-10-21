@@ -221,7 +221,7 @@ const GoogleSheetInput = function () {
 
       plotLogo(content)
 
-      var bannerText = '<div><h1>WNE Technology Radar</h1></div>'
+      var bannerText = '<div><h1>IL Technology Radar</h1></div>'
 
       plotBanner(content, bannerText)
 
@@ -235,7 +235,7 @@ const GoogleSheetInput = function () {
 }
 
 function setDocumentTitle () {
-  document.title = 'WNE Technology Radar'
+  document.title = 'IL Technology Radar'
 }
 
 function plotLoading (content) {
@@ -288,7 +288,7 @@ function plotForm (content) {
   var form = content.select('.input-sheet__form').append('form')
     .attr('method', 'get')
 
-  var years = ["/radars/WNE_2020_2021.csv"]
+  var years = ["/radars/IL.csv"]
   form.append('select')
     .attr('name', 'sheetId')
     .selectAll('years')

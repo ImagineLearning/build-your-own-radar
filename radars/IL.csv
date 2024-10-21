@@ -17,6 +17,22 @@ When decision will be revisited: 01/01/2022</p>
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
+Lexical,Frontend,Invest,lock,"<p><a href=""https://lexical.dev/"">Lexical</a> is an extensible text editor framework.</p>
+<h3>Pros</h3>
+<ul>
+<li>Simple, lightweight, and fast.</li>
+<li>Project backed by a massive community around it.</li>
+<li>Free to use</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Plugin ecosystem can be hard to navigate what to use.</li>
+</ul>
+<p>When decision made: 03/05/2024<br />
+<p>Replaces <a href="""">CKEditor</a>.</p>
+<p>When decision made: 5/1/2024</p>
+<p>When decision will be revisited: 5/1/2028</p>
+"
 React Hooks,Frontend,Invest,confident,"<p><a href=""https://reactjs.org/docs/hooks-overview.html"">React Hooks</a> are functions that let you “hook into” React state and lifecycle features from function components.<br />
 React provides <a href=""https://reactjs.org/docs/hooks-reference.html"">a few built-in Hooks</a>, like <code>useState</code> for managing state, <code>useEffect</code> for performing side-effects.</p>
 <h3>Pros</h3>
@@ -593,7 +609,7 @@ Java + Spring Boot,Backend,Invest,lock,"<p><a href=""https://spring.io/"">Java +
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
-jMeter,Backend,Invest,confident,"<p><a href=""https://jmeter.apache.org/"">jMeter</a> is open source software, a 100% pure Java application designed to load test functional behavior and measure performance. It was originally designed for testing Web Applications but has since expanded to other test functions.</p>
+jMeter,Backend,Hold,confident,"<p><a href=""https://jmeter.apache.org/"">jMeter</a> is open source software, a 100% pure Java application designed to load test functional behavior and measure performance. It was originally designed for testing Web Applications but has since expanded to other test functions.</p>
 <h3>Pros</h3>
 <ul>
 <li>Open source</li>
@@ -605,8 +621,8 @@ jMeter,Backend,Invest,confident,"<p><a href=""https://jmeter.apache.org/"">jMete
 <li>UI is not very intuitive</li>
 <li>Can be very complex to set up</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
+<p>When decision made: 1/1/2023</p>
+<p>When decision will be revisited: 1/1/2024</p>
 "
 gRPC,Backend,Trial,budding,"<p><a href=""https://grpc.io/"">gRPC</a> is a modern open source high performance RPC framework that can run in any environment. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking and authentication. It is also applicable in last mile of distributed computing to connect devices, mobile applications and browsers to backend services.</p>
 <h3>Pros</h3>
@@ -623,6 +639,22 @@ gRPC,Backend,Trial,budding,"<p><a href=""https://grpc.io/"">gRPC</a> is a modern
 <p>** Being considered for interservice communication requests</p>
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
+"
+ExcaliDraw,Infrastructure,Invest,budding,"<p><a href=""https://excalidraw.com/"">Excalidraw</a> is an open source virtual hand-drawn style whiteboard for building software diagrams.</p>
+<h3>Pros</h3>
+<ul>
+<li>Open Source</li>
+<li>Good Options for pre-made images</li>
+<li>Very visually appealing diagram generation</li>
+<li>Can export with metadata for easy import</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>No enterprise option</li>
+</ul>
+<p>** Being used for building software diagrams</p>
+<p>When decision made: 1/1/2023</p>
+<p>When decision will be revisited: 1/1/2024</p>
 "
 GraphQL,Backend,Trial,budding,"<p><a href=""https://graphql.org/"">GraphQL</a> is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</p>
 <h3>Pros</h3>
@@ -656,7 +688,7 @@ Python,Backend,Hold,none,"<p><a href=""https://www.python.org/"">Python</a> is p
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Node,Backend,Hold,none,"<p><a href=""https://nodejs.org"">Node</a> is similar in design to, and influenced by, systems like Ruby’s Event Machine and Python’s Twisted. Node.js takes the event model a bit further. It presents an event loop as a runtime construct instead of as a library. In other systems, there is always a blocking call to start the event-loop. Typically, behavior is defined through callbacks at the beginning of a script, and at the end a server is started through a blocking call like EventMachine::run(). In Node.js, there is no such start-the-event-loop call. Node.js simply enters the event loop after executing the input script. Node.js exits the event loop when there are no more callbacks to perform. This behavior is like browser JavaScript — the event loop is hidden from the user.</p>
+Node,Backend,Trial,none,"<p><a href=""https://nodejs.org"">Node</a> is similar in design to, and influenced by, systems like Ruby’s Event Machine and Python’s Twisted. Node.js takes the event model a bit further. It presents an event loop as a runtime construct instead of as a library. In other systems, there is always a blocking call to start the event-loop. Typically, behavior is defined through callbacks at the beginning of a script, and at the end a server is started through a blocking call like EventMachine::run(). In Node.js, there is no such start-the-event-loop call. Node.js simply enters the event loop after executing the input script. Node.js exits the event loop when there are no more callbacks to perform. This behavior is like browser JavaScript — the event loop is hidden from the user.</p>
 <p>HTTP is a first-class citizen in Node.js, designed with streaming and low latency in mind. This makes Node.js well suited for the foundation of a web library or framework.</p>
 <p>Node.js being designed without threads doesn’t mean you can’t take advantage of multiple cores in your environment. Child processes can be spawned by using our child_process.fork() API, and are designed to be easy to communicate with. Built upon that same interface is the cluster module, which allows you to share sockets between processes to enable load balancing over your cores.</p>
 <h3>Pros</h3>
@@ -675,7 +707,7 @@ Node,Backend,Hold,none,"<p><a href=""https://nodejs.org"">Node</a> is similar in
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
-Go,Backend,Hold,budding,"<p><a href=""https://golang.org/"">Go</a> is a C style language with influence from JAVA. Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It’s a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.</p>
+Go,Backend,Trial,budding,"<p><a href=""https://golang.org/"">Go</a> is a C style language with influence from JAVA. Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It’s a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.</p>
 <h3>Pros</h3>
 <ul>
 <li>Extremely fast</li>
@@ -842,7 +874,7 @@ DynamoDB,Data,Invest,lock,"<p>Dynamo is a NOSQL database hosted and manged by AW
 <li>Difficult to query ad-hoc</li>
 </ul>
 <p>Dynamo should be used by default for any microservice that is storing things as operational records that do not have heavy query requirements. For more information see <a href=""https://medium.com/imaginelearning/bring-dynamo-to-the-data-science-party-2d961b72bb8d?source=friends_link&amp;sk=5dd7bd16cbf678bb926122549d83cb4a"">This great Medium article</a></p>"
-Elasticsearch,Data,Invest,confident,"<p><a href=""https://elastic.co"">Elasticsearch</a> is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.</p>
+Elasticsearch,Data,Hold,confident,"<p><a href=""https://elastic.co"">Elasticsearch</a> is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.</p>
 <h3>Pros</h3>
 <ul>
 <li>Extremely efficient text searching</li>
@@ -854,8 +886,23 @@ Elasticsearch,Data,Invest,confident,"<p><a href=""https://elastic.co"">Elasticse
 <li>No ability to join documents directly</li>
 <li>Can be difficult to setup and maintain</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2021</p>
+<p>When decision made: 8/1/2023</p>
+<p>When decision will be revisited: 8/1/2024</p>
+"
+OpenSearch,Data,Invest,confident,"<p><a href=""https://opensearch.org/"">OpenSearch</a> is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. It centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.</p>
+<h3>Pros</h3>
+<ul>
+<li>Extremely efficient text searching</li>
+<li>Great for simple metric aggregations</li>
+<li>Extremely fast response times</li>
+<li>Works well within AWS</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Query language can be difficult</li>
+</ul>
+<p>When decision made: 8/1/2023</p>
+<p>When decision will be revisited: 8/1/2024</p>
 "
 Redis,Data,Invest,confident,"<p><a href=""https://redis.io/"">Redis</a> is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries and streams.</p>
 <h3>Pros</h3>
@@ -977,7 +1024,7 @@ Matillion,Data,Hold,confident,"<p><a href=""https://www.matillion.com/"">Matilli
 <p>When decision made: 5/1/2021</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-MongoDB,Data,Hold,none,"<p><a href=""hhttps://www.mongodb.com/"">MongoDB</a> is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.</p>
+MongoDB,Data,Divest,none,"<p><a href=""hhttps://www.mongodb.com/"">MongoDB</a> is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.</p>
 <h3>Pros</h3>
 <ul>
 <li>Very fast document storage</li>
@@ -1185,6 +1232,39 @@ Fluentd,Infrastructure,Invest,confident,"<p><a href=""https://www.fluentd.org/""
 <p>When decision made: 5/1/2021</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
+Micronaut,Backend,Invest,confident,"<p><a href=""https://micronaut.io/"">Micronaut</a> is a modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications.</p>
+<h3>Pros</h3>
+<ul>
+<li>Lightweight</li>
+<li>JVM-Based</li>
+<li>
+<li><p>Your application startup time and memory consumption aren't bound to the size of your codebase, resulting in a monumental leap in startup time, blazing fast throughput, and a minimal memory footprint.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Not as mature as Spring in some areas</li>
+<li>Paradigms to reactive programming take time to learn.</li>
+<li>Yet Another Framework</li>
+</ul>
+<p>When decision made: 8/1/2021</p>
+<p>When decision will be revisited: 8/1/2024</p>
+"
+Kotlin,Backend,Invest,confident,"<p><a href=""https://kotlinlang.org/"">Kotlin</a> is a cross-platform, statically typed, general-purpose programming language with type inference.</p>
+<h3>Pros</h3>
+<ul>
+<li>Syntax will be familiar to Java and .NET Core</li>
+<li>JVM-Based</li>
+<li>Able to recruit engineers into the space.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Language Maturity</li>
+<li>Absence of primative types</li>
+<li>Syntax Surgar can distract new engineers</li>
+</ul>
+<p>When decision made: 8/1/2022</p>
+<p>When decision will be revisited: 8/1/2024</p>
+"
 Github (source),Infrastructure,Invest,lock,"<p><a href=""https://github.com/"">Github</a> is a platform to host all of your git based repositories. By extension <a href=""https://git-scm.com"">git</a> should be used as your distributed version control system.</p>
 <h3>Pros</h3>
 <ul>
@@ -1337,7 +1417,7 @@ S3,Infrastructure,Invest,confident,"<p>S3 is a distributed file system. It is hi
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
-Ansible (Configuration Management),Infrastructure,Invest,confident,"<p><a href=""https://www.ansible.com/"">Ansible</a> is a universal language, unraveling the mystery of how work gets done. Turn tough tasks into repeatable playbooks. Roll out enterprise-wide protocols with the push of a button.</p>
+Ansible (Configuration Management),Infrastructure,Divest,confident,"<p><a href=""https://www.ansible.com/"">Ansible</a> is a universal language, unraveling the mystery of how work gets done. Turn tough tasks into repeatable playbooks. Roll out enterprise-wide protocols with the push of a button.</p>
 <h3>Pros</h3>
 <ul>
 <li>Simple yaml playbooks</li>
@@ -1373,7 +1453,7 @@ EKS,Infrastructure,Trial,budding,"<p><a href="""">Kubernetes</a> is the best con
 <p>When decision made: 5/1/2021</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Jenkins,Infrastructure,Trial,leaning,"<p><a href=""https://jenkins.io/"">Jenkins</a> is a build system. Built by the open source community it provides all the functionality needed for continuous integration.</p>
+Jenkins,Infrastructure,Hold,leaning,"<p><a href=""https://jenkins.io/"">Jenkins</a> is a build system. Built by the open source community it provides all the functionality needed for continuous integration.</p>
 <h3>Pros</h3>
 <ul>
 <li>Innumerable plugins</li>
@@ -1386,7 +1466,7 @@ Jenkins,Infrastructure,Trial,leaning,"<p><a href=""https://jenkins.io/"">Jenkins
 <p>When decision made: 5/1/2021</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Teamcity,Infrastructure,Trial,leaning,"<p><a href=""https://www.jetbrains.com/teamcity/"">Teamcity</a> is a build system. Built by the folks at Jetbrains it provides all the functionality needed for continuous integration.</p>
+Teamcity,Infrastructure,Hold,leaning,"<p><a href=""https://www.jetbrains.com/teamcity/"">Teamcity</a> is a build system. Built by the folks at Jetbrains it provides all the functionality needed for continuous integration.</p>
 <h3>Pros</h3>
 <ul>
 <li>Solid interface</li>
@@ -1402,7 +1482,7 @@ Teamcity,Infrastructure,Trial,leaning,"<p><a href=""https://www.jetbrains.com/te
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Spinnaker,Infrastructure,Trial,leaning,"<p><a href=""https://www.spinnaker.io/"">Spinnaker</a> is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.</p>
+Spinnaker,Infrastructure,Invest,leaning,"<p><a href=""https://www.spinnaker.io/"">Spinnaker</a> is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.</p>
 <h3>Pros</h3>
 <ul>
 <li>Visual workflow for releases</li>
@@ -1482,7 +1562,7 @@ Harbor,Infrastructure,Trial,budding,"<p><a href=""https://goharbor.io"">Harbor</
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Istio,Infrastructure,Trial,budding,"<p><a href=""https://istio.io/"">Istio</a> helps reduce the complexity deployments, and eases the strain on your development teams. It is a completely open source service mesh that layers transparently onto existing distributed applications.</p>
+Istio,Infrastructure,Invest,budding,"<p><a href=""https://istio.io/"">Istio</a> helps reduce the complexity deployments, and eases the strain on your development teams. It is a completely open source service mesh that layers transparently onto existing distributed applications.</p>
 <h3>Pros</h3>
 <ul>
 <li>Automatic load balancing</li>
@@ -1499,7 +1579,7 @@ Istio,Infrastructure,Trial,budding,"<p><a href=""https://istio.io/"">Istio</a> h
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Traefik,Infrastructure,Trial,budding,"<p><a href=""https://www.ansible.com/"">Traefik</a> is a leading modern reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components and configures itself automatically and dynamically.</p>
+Traefik,Infrastructure,Hold,budding,"<p><a href=""https://www.ansible.com/"">Traefik</a> is a leading modern reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components and configures itself automatically and dynamically.</p>
 <h3>Pros</h3>
 <ul>
 <li>Simple to configure</li>
@@ -1514,7 +1594,7 @@ Traefik,Infrastructure,Trial,budding,"<p><a href=""https://www.ansible.com/"">Tr
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-ECR,Infrastructure,Trial,budding,"<p><a href=""https://aws.amazon.com/ecr/"">ECR</a> is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Amazon ECR is integrated with Amazon Elastic Container Service (ECS), simplifying your development to production workflow. Amazon ECR eliminates the need to operate your own container repositories or worry about scaling the underlying infrastructure. Amazon ECR hosts your images in a highly available and scalable architecture, allowing you to reliably deploy containers for your applications.</p>
+ECR,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/ecr/"">ECR</a> is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Amazon ECR is integrated with Amazon Elastic Container Service (ECS), simplifying your development to production workflow. Amazon ECR eliminates the need to operate your own container repositories or worry about scaling the underlying infrastructure. Amazon ECR hosts your images in a highly available and scalable architecture, allowing you to reliably deploy containers for your applications.</p>
 <h3>Pros</h3>
 <ul>
 <li>Integration with IAM</li>
@@ -1595,7 +1675,7 @@ ECS,Infrastructure,Divest,none,"<p><a href=""https://aws.amazon.com/ecs/"">Elast
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Datadog,Infrastructure,Divest,none,"<p><a href=""https://www.datadoghq.com/"">Datadog</a> is a hosted platform for monitoring and analytics. Datadog enables easy instrumentation of many types of applications and infrastructure.</p>
+Datadog,Infrastructure,Hold,none,"<p><a href=""https://www.datadoghq.com/"">Datadog</a> is a hosted platform for monitoring and analytics. Datadog enables easy instrumentation of many types of applications and infrastructure.</p>
 <h3>Pros</h3>
 <ul>
 <li>Very quick to implement</li>
@@ -1724,7 +1804,7 @@ Octopus Deploy,Infrastructure,Divest,none,"<p><a href=""https://octopus.com/"">O
 <p>When decision made: 1/1/2020</p>
 <p>When decision will be revisited: 1/1/2022</p>
 "
-k6,Backend,Trial,budding,"<p><a href=""https://k6.io/"">k6</a> is a developer-centric, free and open-source load testing tool built for making performance testing a productive and enjoyable experience. It is written in Go and runs test scripts that are written in JavaScript.</p>
+k6,Backend,Invest,budding,"<p><a href=""https://k6.io/"">k6</a> is a developer-centric, free and open-source load testing tool built for making performance testing a productive and enjoyable experience. It is written in Go and runs test scripts that are written in JavaScript.</p>
 <h3>Pros</h3>
 <ul>
 <li>Test scripts are written in JavaScript.</li>
@@ -1736,7 +1816,21 @@ k6,Backend,Trial,budding,"<p><a href=""https://k6.io/"">k6</a> is a developer-ce
 <li>It does not render web pages.</li>
 <li>Including external Node.js modules requires extra effort to bundle, if needed.</li>
 </ul>
-<p>** Being considered as a replacement for <a href="""">jMeter</a>.</p>
-<p>When decision made: 11/2020</p>
-<p>When decision will be revisited: 11/2022</p>
+<p>** Currently replacing <a href="""">jMeter</a>.</p>
+<p>When decision made: 06/2023</p>
+<p>When decision will be revisited: 06/2024</p>
+"
+AWS CodePipeline,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/codepipeline/"">AWS CodePipeline</a> is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. This enables you to rapidly and reliably deliver features and updates. You can easily integrate AWS CodePipeline with third-party services such as GitHub or with your own custom plugin.</p>
+<h3>Pros</h3>
+<ul>
+<li>Super Versatile to create pipelines for anything.</li>
+<li>It is an AWS Managed Product.</li>
+<li>Pay for what you use.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>AWS specific product.</li>
+</ul>
+<p>When decision made: 1/1/2022</p>
+<p>When decision will be revisited: 1/1/2024</p>
 "

@@ -3,7 +3,7 @@ const fs = require('fs');
 const markdownIntoHtml = require('markdown-into-html');
 const csv = require('csv-parser')
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
-const currentCsvPath = path.join(__dirname, '../radars/WNE_2020_2021.csv')
+const currentCsvPath = path.join(__dirname, '../radars/IL.csv')
 const csvWriter = createCsvWriter({
     path: currentCsvPath,
     header: [

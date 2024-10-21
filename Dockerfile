@@ -1,6 +1,8 @@
 FROM node:10.15.3 as source
 WORKDIR /src/build-your-own-radar
 COPY package.json ./
+RUN npm i -g npm@6.9.0
+RUN echo "optional = false" > .npmrc
 RUN npm install
 COPY *.js *.json ./
 COPY ./src ./src/
