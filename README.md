@@ -6,12 +6,12 @@ Pull requests are welcome; please write tests whenever possible. Make sure you h
 - `npm test` - to run your tests
 - `npm start` - to run application in http://localhost:8080. This will watch the `.js` and `.css` files and rebuild on file changes
 
-To run End to End tests in headless mode
+To run End-to-End tests in headless mode
 
 - add a new environment variable 'TEST_URL' and set it to 'http://localhost:8080/'
 - `npm run e2e`
 
-To run End to End tests in debug mode
+To run End-to-End tests in debug mode
 
 - add a new environment variable 'TEST_URL' and set it to
 - Run `TEST_URL=http://localhost:8080/ npm run e2e:open`
@@ -24,13 +24,13 @@ The current format of the CSV can be found in one of the csv files found in the 
 It's a simple format looks similar to the following:
 
 | name   | quadrant       | ring  | icon    | description                    |
-| ------ | -------------- | ----- | ------- | ------------------------------ |
+|--------|----------------|-------|---------|--------------------------------|
 | React  | Frontend       | Adopt | lock    | Although the idea web ...      |
 | gRPC   | Infrastructure | Trial | budding | Interservice communication ... |
 | Spark  | Data           | Adopt | lock    | Spark is great ...             |
 | NodeJS | Backend        | Hold  | lock    | Node ...                       |
 
-You an simply add rows following the same pattern as other rows and the radar will adjust accordingly.
+You can simply add rows following the same pattern as other rows and the radar will adjust accordingly.
 
 ## Building the radar
 
@@ -58,4 +58,4 @@ To see the results locally run `npm run start` and that will start a server at `
 ## Futures
 
 - Handle more csv files automatically instead of a static list
-- Include all data about the technology (ring, quadrant, etc) in the markdown files and generate a csv from that rather than double entering data
+- Include all data about the technology (ring, quadrant, etc.) in the markdown files and generate a csv from that rather than double entering data
