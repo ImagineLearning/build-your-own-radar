@@ -978,9 +978,9 @@ Postgres (Aurora Serverless),Data,Trial,budding,"<p><a href=""https://aws.amazon
 <li>Will not perform as well as some other options</li>
 <li>Only supported with specific versions of Postgres</li>
 </ul>
-<p>*** Should only be considered for non production use cases ***</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>Aurora Serverless v2 can now be considered for both non-prod and prod use cases</p>
+<p>When decision made: 10/21/2024</p>
+<p>When decision will be revisited: 5/1/2025</p>
 "
 Databricks,Data,Trial,confident,"<p><a href=""https://databricks.com"">Databricks</a> is a service built around data systems and its processes. The intent is to make the configuration of data systems simpler and more accessible to the masses.</p>
 <h3>Pros</h3>
