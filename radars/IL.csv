@@ -562,6 +562,21 @@ Applitools,Frontend,Invest,lock,"<p><a href=""https://applitools.com/"">Applitoo
 <p>When decision made: 08/2021</p>
 <p>When decision will be revisited: 08/2023</p>
 "
+Ant Design,Frontend,Divest,none,"<p><a href=""https://ant.design/"">Ant Design</a> is a powerful and widely-used React UI library that provides a comprehensive collection of pre-designed components and design resources for building visually appealing and user-friendly web applications.</p>
+<h3>Pros</h3>
+<ul>
+<li>Increased Development Efficiency: By leveraging pre-built components, you can significantly speed up your development process, reducing the time and effort required to create your UI.</li>
+<li>Improved User Experience: Ant Design's components are designed with user experience in mind, ensuring that your application is intuitive, easy to navigate, and visually appealing.</li>
+<li>Enhanced Consistency: The use of a design system promotes consistency across your application, making it easier to maintain and update.</li>
+<li>Reduced Development Costs: By streamlining the development process and minimizing the need to build UI elements from scratch, Ant Design can help reduce overall development costs.</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>There is some risk that Ant Design could get us in some hot water with TX-RAMP and limit our ability to sell in Texas.</li>
+</ul>
+<p>When decision made: 10/22/2024</p>
+<p>When decision will be revisited: 10/22/2024</p>
+"
 ASP.NET Core,Backend,Invest,lock,"<p><a href=""https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core"">ASP.NET Core</a> is built on the new <a href="""">.NET Core</a> framework but is designed for the web. As with .NET Core this is an open source framework. While <a href=""http://ASP.NET"">ASP.NET</a> can be used for server side rendering pages the WNE strong preference is that the frontend apps are single page applications (SPAs) using <a href="""">React</a>.</p>
 <h3>Pros</h3>
 <ul>
