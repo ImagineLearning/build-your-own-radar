@@ -1148,21 +1148,21 @@ MySQL,Data,Divest,none,"<p><a href=""https://www.mysql.com/"">MySQL</a> enables 
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-ELK (OpenDistro),Infrastructure,Invest,confident,"<p>ELK is the combination of Elasticsearch, Kibana and Logstash. See <a href="""">Elasticsearch</a> for more information on that but Logstash is a good ingester of data into Elasticsearch. This combination of services makes for a solid logging solution. Additionally, AWS has contributed back to the community with <a href=""https://opendistro.github.io/for-elasticsearch/"">OpenDistro</a> to fill the gaps in authentication and management of the system.</p>
+ELK (OpenDistro),Infrastructure,Divest,confident,"<p>ELK is the combination of Elasticsearch, Kibana and Logstash. See <a href="""">Elasticsearch</a> for more information on that but Logstash is a good ingester of data into Elasticsearch. This combination of services makes for a solid logging solution. Additionally, AWS has contributed back to the community with <a href=""https://opendistro.github.io/for-elasticsearch/"">OpenDistro</a> to fill the gaps in authentication and management of the system.</p>
 <h3>Pros</h3>
 <ul>
 <li>Can handle large amounts of log data</li>
-<li>Very low cost because there are no license restrictions</li>
 <li>Automatic ingestion of any log</li>
 </ul>
 <h3>Cons</h3>
 <ul>
 <li>Requires some maintenance and consideration on the indices themselves</li>
 <li>Doesn’t have</li>
+<li>Self Deployment can be painful</li>
 </ul>
 <p><a href=""https://engineering.grab.com/structured-logging"">Structured logs</a> should be used where possible to make the searches as efficient as possible.</p>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
 Kubernetes,Infrastructure,Invest,lock,"<p>Kubernetes is a container orchestration system. Kubernetes has become the de facto standard in the last few years when it comes to running containers.</p>
 <h3>Pros</h3>
@@ -1171,14 +1171,15 @@ Kubernetes,Infrastructure,Invest,lock,"<p>Kubernetes is a container orchestratio
 <li>Self healing pods when configured with health and readiness probes</li>
 <li>Efficiently packs applications onto the nodes to achieve greater application density which leads to lower costs</li>
 <li>Extremely active community that is constantly contributing back to the ecosystem</li>
+<li>Extensible API</li>
 </ul>
 <h3>Cons</h3>
 <ul>
 <li>Initial configuration can be very daunting</li>
 <li>Required updates on the regular to not fall behind</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2022</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
 Docker,Infrastructure,Invest,lock,"<p>Docker is a means of packaging an application with all of its dependencies required to run. You can think of a Docker container as a lightweight virtual machine without the overhead of the OS. Typically we prefer smaller containers based on the Alpine images. When you build your applications this way you can have the same deployment patterns with all applications regardless of language.</p>
 <h3>Pros</h3>
@@ -1269,10 +1270,10 @@ Github (source),Infrastructure,Invest,lock,"<p><a href=""https://github.com/"">G
 <ul>
 <li>Occasional outages can affect engineering</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2026</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
-Clair,Infrastructure,Invest,leaning,"<p><a href=""https://coreos.com/clair/docs/latest/"">Clair</a> is a security scanner for Docker containers. Using Clair you are able to determine if there are known security issues with your container.</p>
+Clair,Infrastructure,Hold,leaning,"<p><a href=""https://coreos.com/clair/docs/latest/"">Clair</a> is a security scanner for Docker containers. Using Clair you are able to determine if there are known security issues with your container.</p>
 <h3>Pros</h3>
 <ul>
 <li>Integrates well with a private Docker registry</li>
@@ -1283,8 +1284,8 @@ Clair,Infrastructure,Invest,leaning,"<p><a href=""https://coreos.com/clair/docs/
 <li>No UI</li>
 <li>Configuration isn’t straightforward</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
 Jira,Infrastructure,Invest,lock,"<p><a href=""https://www.atlassian.com/software/jira"">Jira</a> is project management software.</p>
 <h3>Pros</h3>
@@ -1302,7 +1303,7 @@ Jira,Infrastructure,Invest,lock,"<p><a href=""https://www.atlassian.com/software
 <p>When decision made: 5/1/2021</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-SonarQube,Infrastructure,Invest,confident,"<p><a href=""https://www.sonarqube.org"">SonarQube</a> is a platform for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities.</p>
+SonarQube,Infrastructure,Divest,confident,"<p><a href=""https://www.sonarqube.org"">SonarQube</a> is a platform for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities.</p>
 <h3>Pros</h3>
 <ul>
 <li>Easy way to integrate code quality metrics with CI/CD pipeline</li>
@@ -1317,9 +1318,11 @@ SonarQube,Infrastructure,Invest,confident,"<p><a href=""https://www.sonarqube.or
 <li>The Free Qube version of the product only supports scanning master branch</li>
 <li>Cloud based version can be costly</li>
 <li>Limited</li>
+<li>Has not been modernizing</li>
+<li>Deploying and maintaining ourselves can cause pain</li>
 </ul>
-<p>When decision made: 9/29/2020</p>
-<p>When decision will be revisited: 9/22/2022</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
 New Relic,Infrastructure,Invest,confident,"<p><a href=""https://newrelic.com/"">New Relic</a> is an analytics package that can be used to gain insights about your application. NewRelic can be depoyed as an Application Performance Monitor (APM) or to your infrastructure for insights into how the system is performing as a whole. New Relic should be used instead of <a href="""">Datadog</a>.</p>
 <h3>Pros</h3>
@@ -1335,9 +1338,10 @@ New Relic,Infrastructure,Invest,confident,"<p><a href=""https://newrelic.com/"">
 <ul>
 <li>More expensive than some other offerings</li>
 <li>Cost prohibitive to use for logs as well</li>
+<li>Prometheus metrics can be expensive to ingest</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2022 (under 2 year contract)</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2025</p>
 "
 Prometheus + Grafana,Infrastructure,Invest,confident,"<p><a href=""https://prometheus.io/"">Prometheus</a> is an open source time series database. Prometheus implements a pull model for metrics rather than a push model. Meaning your applications need to have an endpoint, typically <code>/metrics</code> that Prometheus can scrape metrics from.</p>
 <p><a href=""https://grafana.com/"">Grafana</a> is an open source visualization tool that can connect to many different data sources to visualize data. Grafana also can provide alerting.</p>
@@ -1353,11 +1357,11 @@ Prometheus + Grafana,Infrastructure,Invest,confident,"<p><a href=""https://prome
 </ul>
 <h3>Cons</h3>
 <ul>
-<li>We administer these services ourselves</li>
+<li>We administer these services ourselves or pay for vendor support</li>
 <li>Lack of cohesion sometimes</li>
 </ul>
-<p>When decision made: 3/5/2020<br />
-When decision will be revisited: 01/01/2022</p>
+<p>When decision made: 11/31/2024<br/>
+When decision will be revisited: 11/31/2026</p>
 "
 Velero (Heptio Ark),Infrastructure,Invest,confident,"<p><a href=""https://velero.io/"">Velero</a> formerly Heptio Ark is an automated backup solution native for Kubernetes. Velero automatically backs up your k8s configuration and takes snapshots of persistent volumes if necessary.</p>
 <h3>Pros</h3>
@@ -1370,8 +1374,8 @@ Velero (Heptio Ark),Infrastructure,Invest,confident,"<p><a href=""https://velero
 <ul>
 <li>Requires maintenance</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
 Athena,Infrastructure,Invest,confident,"<p><a href=""https://aws.amazon.com/athena/"">Amazon Athena</a> is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.</p>
 <p>Athena is easy to use. Simply point to your data in Amazon S3, define the schema, and start querying using standard SQL. Most results are delivered within seconds. With Athena, there’s no need for complex ETL jobs to prepare your data for analysis. This makes it easy for anyone with SQL skills to quickly analyze large-scale datasets.</p>
@@ -1426,7 +1430,7 @@ Ansible (Configuration Management),Infrastructure,Divest,confident,"<p><a href="
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-EKS,Infrastructure,Trial,budding,"<p><a href="""">Kubernetes</a> is the best container orchestration system around. AWS has decided to make it a first class citizen on AWS by offering a managed system. The idea here is to make it easier to maintain your k8s cluster for minimal cost.</p>
+EKS,Infrastructure,Invest,confident,"<p><a href="""">Kubernetes</a> is the best container orchestration system around. AWS has decided to make it a first class citizen on AWS by offering a managed system. The idea here is to make it easier to maintain your k8s cluster for minimal cost.</p>
 <h3>Pros</h3>
 <ul>
 <li>Easy to set up</li>
@@ -1440,12 +1444,10 @@ EKS,Infrastructure,Trial,budding,"<p><a href="""">Kubernetes</a> is the best con
 <li>Tied to AWS</li>
 <li>Less ability to customize</li>
 </ul>
-<h3>Trial Goal</h3>
-<p>The goal of trialing EKS is see if we can become more efficient and stay up to date without manually upgrading the cluster constantly with added security.</p>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
-Jenkins,Infrastructure,Hold,leaning,"<p><a href=""https://jenkins.io/"">Jenkins</a> is a build system. Built by the open source community it provides all the functionality needed for continuous integration.</p>
+Jenkins,Infrastructure,Divest,leaning,"<p><a href=""https://jenkins.io/"">Jenkins</a> is a build system. Built by the open source community it provides all the functionality needed for continuous integration.</p>
 <h3>Pros</h3>
 <ul>
 <li>Innumerable plugins</li>
@@ -1455,10 +1457,10 @@ Jenkins,Infrastructure,Hold,leaning,"<p><a href=""https://jenkins.io/"">Jenkins<
 <ul>
 <li>Sometimes low quality plugins due to open source community</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
-Teamcity,Infrastructure,Hold,leaning,"<p><a href=""https://www.jetbrains.com/teamcity/"">Teamcity</a> is a build system. Built by the folks at Jetbrains it provides all the functionality needed for continuous integration.</p>
+Teamcity,Infrastructure,Divest,leaning,"<p><a href=""https://www.jetbrains.com/teamcity/"">Teamcity</a> is a build system. Built by the folks at Jetbrains it provides all the functionality needed for continuous integration.</p>
 <h3>Pros</h3>
 <ul>
 <li>Solid interface</li>
@@ -1471,15 +1473,14 @@ Teamcity,Infrastructure,Hold,leaning,"<p><a href=""https://www.jetbrains.com/tea
 <li>Not as popular as Jenkins and so there are less plugins</li>
 <li>Costs money</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
-Spinnaker,Infrastructure,Invest,leaning,"<p><a href=""https://www.spinnaker.io/"">Spinnaker</a> is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.</p>
+Spinnaker,Infrastructure,Divest,confident,"<p><a href=""https://www.spinnaker.io/"">Spinnaker</a> is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.</p>
 <h3>Pros</h3>
 <ul>
 <li>Visual workflow for releases</li>
 <li>Very customizable</li>
-<li>Constantly evolving</li>
 </ul>
 <h3>Cons</h3>
 <ul>
@@ -1487,11 +1488,12 @@ Spinnaker,Infrastructure,Invest,leaning,"<p><a href=""https://www.spinnaker.io/"
 <li>Difficult configuration</li>
 <li>Occasional there are significant changes required to upgrade</li>
 <li>Not super well documented</li>
+<li>Lack of feature development</li>
 </ul>
-<p>When decision made: 3/5/2020<br />
-When decision will be revisited: 01/01/2022</p>
+<p>When decision made: 11/31/2024<br />
+When decision will be revisited: 11/31/2026</p>
 "
-Concourse CI,Infrastructure,Trial,budding,"<p><a href=""https://concourse-ci.org/"">Concourse CI</a> is an open-source continuous thing-doer. Built on the simple mechanics of resources, tasks, and jobs, Concourse presents a general approach to automation that makes it great for CI/CD. Could potentially replace <a href="""">Spinnaker</a> for CI.</p>
+Concourse CI,Infrastructure,Divest,budding,"<p><a href=""https://concourse-ci.org/"">Concourse CI</a> is an open-source continuous thing-doer. Built on the simple mechanics of resources, tasks, and jobs, Concourse presents a general approach to automation that makes it great for CI/CD. Could potentially replace <a href="""">Spinnaker</a> for CI.</p>
 <h3>Pros</h3>
 <ul>
 <li>Native Kubernetes support</li>
@@ -1502,11 +1504,13 @@ Concourse CI,Infrastructure,Trial,budding,"<p><a href=""https://concourse-ci.org
 <ul>
 <li>Fairly new system</li>
 <li>Lack of plugins (design decision)</li>
+<li>Poor community support</li>
+<li>Very complex underlying architecture</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
-Terraform (Provisioning),Infrastructure,Trial,leaning,"<p><a href=""https://www.terraform.io/"">Terraform</a> is an open source tool to use <code>Infrastructure as Code</code> principles. As your infrastructure is created you can always make modifications and deploy all of your infra like you would with code.</p>
+Terraform (Provisioning),Infrastructure,Hold,leaning,"<p><a href=""https://www.terraform.io/"">Terraform</a> is an open source tool to use <code>Infrastructure as Code</code> principles. As your infrastructure is created you can always make modifications and deploy all of your infra like you would with code.</p>
 <h3>Pros</h3>
 <ul>
 <li>Syntactically superior to other tools</li>
@@ -1519,13 +1523,15 @@ Terraform (Provisioning),Infrastructure,Trial,leaning,"<p><a href=""https://www.
 <ul>
 <li>Doesn’t provided direct drift detection</li>
 <li>IAM access is required to use Terraform effectively</li>
+<li>HCL is yet another language to learn</li>
+<li>State Management needs to be setup in an external store like AWS S3</li>
 </ul>
 <p>Terraform workspaces should be employed to separate different environments.<br />
 Replaces <a href="""">Cloud Formation</a></p>
-<p>When decision made:</p>
-<p>When decision will be revisited:</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
-AWS Cloud Formation,Infrastructure,Trial,leaning,"<p><a href=""https://aws.amazon.com/cloudformation/"">CloudFormation</a> iprovides a common language for you to model and provision AWS and third party application resources in your cloud environment. AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This gives you a single source of truth for your AWS and third party resources.</p>
+AWS CloudFormation,Infrastructure,Hold,leaning,"<p><a href=""https://aws.amazon.com/cloudformation/"">CloudFormation</a> iprovides a common language for you to model and provision AWS and third party application resources in your cloud environment. AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This gives you a single source of truth for your AWS and third party resources.</p>
 <h3>Pros</h3>
 <ul>
 <li>Native integration with AWS</li>
@@ -1536,8 +1542,8 @@ AWS Cloud Formation,Infrastructure,Trial,leaning,"<p><a href=""https://aws.amazo
 <li>Only works with AWS</li>
 <li>Tools and syntax are arguably unintuitive</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
 Harbor,Infrastructure,Trial,budding,"<p><a href=""https://goharbor.io"">Harbor</a> is an open source registry that secures artifacts with policies and role-based access control, ensures images are scanned and free from vulnerabilities, and signs images as trusted. As a CNCF Graduated project, Harbor delivers compliance, performance, and interoperability to help you consistently and securely manage artifacts across cloud native compute platforms like Kubernetes and Docker.</p>
 <h3>Pros</h3>
@@ -1554,12 +1560,12 @@ Harbor,Infrastructure,Trial,budding,"<p><a href=""https://goharbor.io"">Harbor</
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
 "
-Istio,Infrastructure,Invest,budding,"<p><a href=""https://istio.io/"">Istio</a> helps reduce the complexity deployments, and eases the strain on your development teams. It is a completely open source service mesh that layers transparently onto existing distributed applications.</p>
+Istio,Infrastructure,Divest,confident,"<p><a href=""https://istio.io/"">Istio</a> helps reduce the complexity deployments, and eases the strain on your development teams. It is a completely open source service mesh that layers transparently onto existing distributed applications.</p>
 <h3>Pros</h3>
 <ul>
 <li>Automatic load balancing</li>
 <li>Fine grained traffic control</li>
-<li>Automatic metrics, logs, traces</li>
+<li>Automatic access logs</li>
 <li>Secure service to service communication</li>
 <li>Deployment method support (blue/green, etc)</li>
 </ul>
@@ -1567,11 +1573,14 @@ Istio,Infrastructure,Invest,budding,"<p><a href=""https://istio.io/"">Istio</a> 
 <ul>
 <li>Configuration can be heavy</li>
 <li>Introduces some overhead into the system</li>
+<li>Massively complex system</li>
+<li>Extra cost due to massive increase in pods</li>
+<li>Ambient Mesh option converts envoy into a multi-tenant system which can lead to one tenant hurting other tenants</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
-Traefik,Infrastructure,Hold,budding,"<p><a href=""https://www.ansible.com/"">Traefik</a> is a leading modern reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components and configures itself automatically and dynamically.</p>
+Traefik,Infrastructure,Divest,confident,"<p><a href=""https://traefik.io/traefik/"">Traefik</a> is a leading modern reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components and configures itself automatically and dynamically.</p>
 <h3>Pros</h3>
 <ul>
 <li>Simple to configure</li>
@@ -1582,9 +1591,10 @@ Traefik,Infrastructure,Hold,budding,"<p><a href=""https://www.ansible.com/"">Tra
 <ul>
 <li>Doesn’t have built-in monitoring and tracing</li>
 <li>Emerging support for deployment patterns (e.g. blue/green)</li>
+<li>Major API version upgrades have been painful</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
 ECR,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/ecr/"">ECR</a> is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Amazon ECR is integrated with Amazon Elastic Container Service (ECS), simplifying your development to production workflow. Amazon ECR eliminates the need to operate your own container repositories or worry about scaling the underlying infrastructure. Amazon ECR hosts your images in a highly available and scalable architecture, allowing you to reliably deploy containers for your applications.</p>
 <h3>Pros</h3>
@@ -1595,11 +1605,11 @@ ECR,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/ecr/"">EC
 </ul>
 <h3>Cons</h3>
 <ul>
-<li>No security scanning</li>
+<li>Security scanning is not intuitive</li>
 <li>Interface is lacking</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
 AWS Api Gateway,Infrastructure,Hold,none,"<p><a href=""https://aws.amazon.com/api-gateway/"">Api Gateway</a> is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the “front door” for applications to access data, business logic, or functionality from your backend services. Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.</p>
 <p>Generally speaking Api Gateway is a cool technology but there is a strong preference to run appliations on our existing <a href="""">Kubernetes</a> clusters to take advantage of free resources that are already available.</p>
@@ -1825,4 +1835,100 @@ AWS CodePipeline,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.
 </ul>
 <p>When decision made: 1/1/2022</p>
 <p>When decision will be revisited: 1/1/2024</p>
+"
+Crossplane,Infrastructure,Invest,budding,"<p><a href=""https://www.crossplane.io/"">Crossplane</a> is a control plane framework that is highly extensible and can be used to leverage Kubernetes APIs to manage resources in places like AWS, GCP, Azure, or other tooling</p>
+<h3>Pros</h3>
+<ul>
+<li>Large community</li>
+<li>Can build framework in language of choice including GoLang, Python, KCL, PKL, etc;</li>
+<li>Supports continual reconcilliation to eliminate drift</li>
+<li>Allows platform engineers to build abstractions from complex resources</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Fairly complex leading to steep learning curve</li>
+</ul>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
+"
+Cilium/eBPF Technology,Infrastructure,Invest,budding,"<p><a href=""https://cilium.io/"">Cilium</a> is an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF</p>
+<h3>Pros</h3>
+<ul>
+<li>Large community</li>
+<li>Massive amounts of data to digest to help observe lower layer networking</li>
+<li>Highly performant CNI</li>
+<li>Can replace kube-proxy</li>
+<li>Can protect egress and ingress with Network Policies</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Complexity leading to steep learning curve</li>
+</ul>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
+"
+Linkerd,Infrastructure,Invest,budding,"<p><a href=""https://linkerd.io/"">Linkerd</a> a fast, lightweight and secure service mesh with limited complexity points.</p>
+<h3>Pros</h3>
+<ul>
+<li>CNCF Graduated project</li>
+<li>Simple to deploy and manage</li>
+<li>Provies mTLS and other L7 networking needs</li>
+<li>Lightweight proxy written in Rust leads to lower costs, better performance, more security</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Simplicity means more complex needs like JWT validation is missing</li>
+<li>No built-in ingress functionality built-in</li>
+</ul>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
+"
+ArgoCD,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.github.io/cd/"">ArgoCD</a> is a declarative, GitOps continuous delivery tool for Kubernetes.</p>
+<h3>Pros</h3>
+<ul>
+<li>CNCF Graduated project</li>
+<li>Provides a framework to GitOps delivery models</li>
+<li>Has a powerful UI for visualizing resources</li>
+<li>Extensible tool</li>
+<li> Can integrate with multiple clusters</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Scalability concerns as you get to a large footprint</li>
+</ul>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
+"
+Argo Rollouts,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.github.io/rollouts/"">Argo Rollouts</a> is a Kubernetes controller and set of CRDs which provide advanced deployment capabilities such as blue-green, canary, canary analysis, experimentation, and progressive delivery features to Kubernetes.</p>
+<h3>Pros</h3>
+<ul>
+<li>Supports multiple deployment methods (canary, blue/green)</li>
+<li>Provides fine-grained, weighted traffic shifting</li>
+<li>Automated rollbacks and promotions</li>
+<li>Metric based analysis with queries to New Relic, Prometheus, etc;</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>Requires use of a Rollout CRD rather then integrating with a Deployment resource</li>
+<li>Confusion can be caused when changes are rolled back in Deployment but not in source control (when following GitOps model)</li>
+</ul>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
+"
+Argo Workflows,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.github.io/workflows/"">Argo Workflows</a>is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes for data pipelines, CI/CD processes, etc;.</p>
+<h3>Pros</h3>
+<ul>
+<li>Supports templating out workflows</li>
+<li>No overhead of long lived CI servers, can scale up and down with ease</li>
+<li>Easily orchestrate highly parallel jobs on Kubernetes.</li>
+<li>Can integrate with relational DBs, and object storage for long lived data to share across workflows, visualize logs after run, etc;</li>
+<li>Powerful UI to visualize workflows and results</li>
+</ul>
+<h3>Cons</h3>
+<ul>
+<li>RBAC system is confusing due to how it uses the Kubernetes RBAC currently</li>
+<li>Since it supports more than CI it can be slightly confusing moving from a traditional CI system</li>
+</ul>
+<p>When decision made: 11/31/2024</p>
+<p>When decision will be revisited: 11/31/2026</p>
 "
