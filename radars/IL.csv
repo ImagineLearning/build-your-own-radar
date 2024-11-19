@@ -947,10 +947,18 @@ PowerBI,Data,Invest,confident,"<p><a href=""https://powerbi.microsoft.com/en-us/
 <h3>Cons</h3>
 <ul>
 <li>Setup and installation is a hassle</li>
-<li>Report sharing requires a license</li>
+<li>Report sharing requires a license (for Pro environment; Premium capacity is different)</li>
+<li>Source control is not (easily) possible</li>
+</ul>
+<h3>Alternatives Considered</h3>
+<ul>
+<li>Qlik</li>
+<li>QuickSight</li>
+<li>Tableau</li>
 </ul>
 <p>When decision made: 5/1/2020</p>
 <p>When decision will be revisited: 5/1/2021</p>
+<p>Description last updated: 2/8/2023</p>
 "
 AWS Kinesis Data Analytics (Apache Flink),Data,Trial,budding,"<p><a href=""https://aws.amazon.com/kinesis/data-analytics/"">AWS Kinesis Data Analytics</a> is the easiest way to analyze streaming data, gain actionable insights, and respond to your business and customer needs in real time. Amazon Kinesis Data Analytics reduces the complexity of building, managing, and integrating streaming applications with other AWS services. SQL users can easily query streaming data or build entire streaming applications using templates and an interactive SQL editor. Java developers can quickly build sophisticated streaming applications using open source Java libraries and AWS integrations to transform and analyze data in real-time.</p>
 <h3>Pros</h3>
