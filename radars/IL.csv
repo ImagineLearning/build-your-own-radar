@@ -81,10 +81,8 @@ Redux,Frontend,Invest,lock,"<p><a href=""https://redux.js.org/"">Redux</a> is a 
 <li>Performance implications for too much state in global store.</li>
 <li>Difficult for inexperienced developers to determine what belongs in Redux.</li>
 </ul>
-<p>When decision made: 03/05/2020<br />
-When decision will be revisited: 01/01/2022</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 TypeScript,Frontend,Invest,lock,"<p>A typed superset of JavaScript that compiles to plain JavaScript.</p>
 <h3>Pros</h3>
@@ -99,8 +97,8 @@ TypeScript,Frontend,Invest,lock,"<p>A typed superset of JavaScript that compiles
 <li>Adding JavaScript libraries without type definitions requires jumping through additional hoops.</li>
 <li>Lacks the flexibility that comes with dynamic types in JavaScript.</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 webpack,Frontend,Invest,lock,"<p>A module bundler for bundling JavaScript files for usage in a browser.</p>
 <p>It is used under the hood by both <a href="""">Angular CLI</a> and <a href="""">React scripts</a>.</p>
@@ -148,8 +146,8 @@ Jest,Frontend,Invest,lock,"<p>Jest is a delightful JavaScript Testing Framework 
 <li>Runs tests in a Node process by default, which can be harder to debug than tests run in a browser.</li>
 </ul>
 <p>Replaces <a href="""">Karma</a> and <a href="""">Jasmine</a>.</p>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 KendoReact,Frontend,Invest,leaning,"<p>KendoReact is a UI and data visualization component library for React, built by <a href=""https://telerik.com"">Telerik</a>.</p>
 <h3>Pros</h3>
@@ -220,8 +218,8 @@ Storybook,Frontend,Invest,lock,"<p><a href=""https://storybook.js.org/"">Storybo
 <li>Can be difficult to write stories for components that depend on certain global state (i.e. <a href="""">Redux</a>) or retrieving backend data.</li>
 <li>Integrations for other frameworks, such as Angular, are not as robust as those for React.</li>
 </ul>
-<p>When decision made: 6/1/2020</p>
-<p>When decision will be revisited: 6/1/2021</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 single-spa,Frontend,Trial,leaning,"<p><a href=""https://github.com/single-spa/single-spa"">single-spa</a> is a JavaScript framework for building front-end micro-services or <a href=""https://www.thoughtworks.com/radar/techniques/micro-frontends"">micro frontends</a>, allowing you to build frontend applications that coexist and can be written in their own framework.</p>
 <h3>Pros</h3>
@@ -574,8 +572,8 @@ Ant Design,Frontend,Divest,none,"<p><a href=""https://ant.design/"">Ant Design</
 <ul>
 <li>There is some risk that Ant Design could get us in some hot water with TX-RAMP and limit our ability to sell in Texas.</li>
 </ul>
-<p>When decision made: 10/22/2024</p>
-<p>When decision will be revisited: 10/22/2024</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 ASP.NET Core,Backend,Invest,lock,"<p><a href=""https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core"">ASP.NET Core</a> is built on the new <a href="""">.NET Core</a> framework but is designed for the web. As with .NET Core this is an open source framework. While <a href=""http://ASP.NET"">ASP.NET</a> can be used for server side rendering pages the WNE strong preference is that the frontend apps are single page applications (SPAs) using <a href="""">React</a>.</p>
 <h3>Pros</h3>
@@ -618,8 +616,8 @@ Java,Backend,Invest,lock,"<p><a href=""https://spring.io/"">Java</a>is cross-pla
 <ul>
 <li>Missing syntax surgar of mordern langauges</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 Spring Boot,Backend,Hold,lock,"<p><a href=""https://spring.io/"">Spring Boot</a> makes it easy to create stand-alone, production-grade Spring based Applications that you can “just run”.</p>
 <p>We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need minimal Spring configuration.</p>
@@ -635,8 +633,8 @@ Spring Boot,Backend,Hold,lock,"<p><a href=""https://spring.io/"">Spring Boot</a>
 <li>Unused libraries can bloat overall application size</li>
 <li>Limited control of your application</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 jMeter,Backend,Hold,confident,"<p><a href=""https://jmeter.apache.org/"">jMeter</a> is open source software, a 100% pure Java application designed to load test functional behavior and measure performance. It was originally designed for testing Web Applications but has since expanded to other test functions.</p>
 <h3>Pros</h3>
@@ -697,8 +695,8 @@ GraphQL,Backend,Hold,confident,"<p><a href=""https://graphql.org/"">GraphQL</a> 
 <li>Possible to create extremely costly queries unintentionally</li>
 <li>Lacks support by all libraries and packages</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 Python,Backend,Hold,none,"<p><a href=""https://www.python.org/"">Python</a> is powerful… and fast; plays well with others; runs everywhere; is friendly &amp; easy to learn; is Open.</p>
 <h3>Pros</h3>
@@ -915,8 +913,8 @@ Elasticsearch,Data,Divest,confident,"<p><a href=""https://elastic.co"">Elasticse
 <li>No ability to join documents directly</li>
 <li>Can be difficult to setup and maintain</li>
 </ul>
-<p>When decision made: 8/1/2023</p>
-<p>When decision will be revisited: 8/1/2024</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 OpenSearch,Data,Invest,lock,"<p><a href=""https://opensearch.org/"">OpenSearch</a> is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. It centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.</p>
 <h3>Pros</h3>
@@ -930,8 +928,8 @@ OpenSearch,Data,Invest,lock,"<p><a href=""https://opensearch.org/"">OpenSearch</
 <ul>
 <li>Query language can be difficult</li>
 </ul>
-<p>When decision made: 8/1/2023</p>
-<p>When decision will be revisited: 8/1/2024</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 Redis,Data,Invest,confident,"<p><a href=""https://redis.io/"">Redis</a> is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries and streams.</p>
 <h3>Pros</h3>
@@ -1267,8 +1265,8 @@ Micronaut,Backend,Invest,lock,"<p><a href=""https://micronaut.io/"">Micronaut</a
 <li>Paradigms to reactive programming take time to learn.</li>
 <li>Yet Another Framework</li>
 </ul>
-<p>When decision made: 8/1/2021</p>
-<p>When decision will be revisited: 8/1/2024</p>
+<p>When decision made: 11/7/2024</p>
+<p>When decision will be revisited: 1/1/2026</p>
 "
 Kotlin,Backend,Invest,confident,"<p><a href=""https://kotlinlang.org/"">Kotlin</a> is a cross-platform, statically typed, general-purpose programming language with type inference.</p>
 <h3>Pros</h3>
