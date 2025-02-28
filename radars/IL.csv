@@ -1,4 +1,4 @@
-name,quadrant,ring,icon,description
+name,quadrant,ring,icon,description,decidedDate,revisitDate
 React,Frontend,Invest,lock,"<p><a href=""https://reactjs.org"">React</a> is a simple and lightweight JavaScript library for developing user interfaces in modern applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -11,12 +11,8 @@ React,Frontend,Invest,lock,"<p><a href=""https://reactjs.org"">React</a> is a si
 <li>Not a full-featured framework. Generally requires many different libraries to get desired functionality.</li>
 <li>Rapidly evolving API can cause challenges in maintaining consistency between multiple applications on different versions.</li>
 </ul>
-<p>When decision made: 03/05/2020<br />
-When decision will be revisited: 01/01/2022</p>
 <p>Replaces <a href="""">Angular</a>.</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Vue,Frontend,Hold,budding,"<p><a href=""https://vuejs.org/"">Vue</a>An approachable, performant and versatile framework for building web user interfaces. </p>
 <h3>Pros</h3>
 <ul>
@@ -29,8 +25,7 @@ Vue,Frontend,Hold,budding,"<p><a href=""https://vuejs.org/"">Vue</a>An approacha
 <li>what</li>
 <li>what</li>
 </ul>
-<p>When decision made: 01/31/2025<br />
-"
+",2025-01-31,
 Lexical,Frontend,Invest,lock,"<p><a href=""https://lexical.dev/"">Lexical</a> is an extensible text editor framework.</p>
 <h3>Pros</h3>
 <ul>
@@ -42,11 +37,8 @@ Lexical,Frontend,Invest,lock,"<p><a href=""https://lexical.dev/"">Lexical</a> is
 <ul>
 <li>Plugin ecosystem can be hard to navigate what to use.</li>
 </ul>
-<p>When decision made: 03/05/2024<br />
 <p>Replaces <a href="""">CKEditor</a>.</p>
-<p>When decision made: 5/1/2024</p>
-<p>When decision will be revisited: 5/1/2028</p>
-"
+",2024-05-01,2028-05-01
 React scripts,Frontend,Invest,confident,"<p>Package that includes the scripts and configuration used by <a href=""https://github.com/facebook/create-react-app"">Create React App</a>.</p>
 <h3>Pros</h3>
 <ul>
@@ -59,12 +51,8 @@ React scripts,Frontend,Invest,confident,"<p>Package that includes the scripts an
 <li>Opinionated configuration. Not easily customizable without ejecting.</li>
 <li>Focused on building single-page applications. Not well suited for building libraries or applications with server-side rendering.</li>
 </ul>
-<p>When decision made: 03/05/2020<br />
-When decision will be revisited: 01/01/2022</p>
 <p>Replaces <a href="""">Angular CLI</a>.</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Redux,Frontend,Invest,lock,"<p><a href=""https://redux.js.org/"">Redux</a> is a predictable state container for JavaScript applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -78,9 +66,7 @@ Redux,Frontend,Invest,lock,"<p><a href=""https://redux.js.org/"">Redux</a> is a 
 <li>Performance implications for too much state in global store.</li>
 <li>Difficult for inexperienced developers to determine what belongs in Redux.</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 TypeScript,Frontend,Invest,lock,"<p>A typed superset of JavaScript that compiles to plain JavaScript.</p>
 <h3>Pros</h3>
 <ul>
@@ -94,9 +80,7 @@ TypeScript,Frontend,Invest,lock,"<p>A typed superset of JavaScript that compiles
 <li>Adding JavaScript libraries without type definitions requires jumping through additional hoops.</li>
 <li>Lacks the flexibility that comes with dynamic types in JavaScript.</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 webpack,Frontend,Invest,lock,"<p>A module bundler for bundling JavaScript files for usage in a browser.</p>
 <p>It is used under the hood by both <a href="""">Angular CLI</a> and <a href="""">React scripts</a>.</p>
 <h3>Pros</h3>
@@ -110,9 +94,7 @@ webpack,Frontend,Invest,lock,"<p>A module bundler for bundling JavaScript files 
 <ul>
 <li>Configuration can be complicated and unwieldy.</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Yarn,Frontend,Hold,leaning,"<p><a href=""https://yarnpkg.com/"">Yarn</a> is a fast, stable JavaScript package manager.</p>
 <h3>Pros</h3>
 <ul>
@@ -126,8 +108,7 @@ Yarn,Frontend,Hold,leaning,"<p><a href=""https://yarnpkg.com/"">Yarn</a> is a fa
 <li>v2 has a completely different API.</li>
 </ul>
 <p>Replaces <a href="""">NPM CLI</a>.</p>
-<p>When decision made: 01/30/2025</p>
-"
+",2025-01-30,
 Jest,Frontend,Invest,lock,"<p>Jest is a delightful JavaScript Testing Framework with a focus on simplicity.</p>
 <h3>Pros</h3>
 <ul>
@@ -142,9 +123,7 @@ Jest,Frontend,Invest,lock,"<p>Jest is a delightful JavaScript Testing Framework 
 <li>Runs tests in a Node process by default, which can be harder to debug than tests run in a browser.</li>
 </ul>
 <p>Replaces <a href="""">Karma</a> and <a href="""">Jasmine</a>.</p>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 Kendo,Frontend,Invest,leaning,"<p>Kendo is a UI and data visualization component library for React/Vue, built by <a href=""https://telerik.com"">Telerik</a>.</p>
 <h3>Pros</h3>
 <ul>
@@ -157,9 +136,7 @@ Kendo,Frontend,Invest,leaning,"<p>Kendo is a UI and data visualization component
 <li>Expensive ($899+ <em>per developer</em>).</li>
 <li>Bulky. Can add a lot of size your application bundle.</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2021-05-01,2021-05-01
 Material UI,Frontend,Hold,leaning,"<p><a href=""https://mui.com/material-ui"">Material UI</a> is an open-source React component library that implements Google's Material Design.</p>
 <h3>Pros</h3>
 <ul>
@@ -172,8 +149,7 @@ Material UI,Frontend,Hold,leaning,"<p><a href=""https://mui.com/material-ui"">Ma
 <li>con1</li>
 <li>con2</li>
 </ul>
-<p>When decision made: 1/30/2025</p>
-"
+",2025-01-30,
 SASS,Frontend,Invest,leaning,"<p><a href=""https://sass-lang.com"">Sass</a> claims to be the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
 <h3>Pros</h3>
 <ul>
@@ -187,9 +163,7 @@ SASS,Frontend,Invest,leaning,"<p><a href=""https://sass-lang.com"">Sass</a> clai
 <li>Makes it really easy to write bad CSS, like deeply nested selectors.</li>
 <li>Another thing to configure in your build tooling.</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Cypress,Frontend,Invest,lock,"<p><a href=""https://cypress.io"">Cypress</a> is a tool for fast, easy, reliable testing of anything that runs in a browser.</p>
 <h3>Pros</h3>
 <ul>
@@ -212,9 +186,7 @@ Cypress,Frontend,Invest,lock,"<p><a href=""https://cypress.io"">Cypress</a> is a
 </ul>
 <p>Replaces <a href="""">Protractor</a> and <a href="""">Selenium WebDriver</a>.</p>
 <p>When paired with <a href="""">Applitools</a> it enables easy automated visual regression testing across multiple browsers.  Applitools is recommended when using Cypress for visual testing (not functional testing).</p>
-<p>When decision made: 08/2021</p>
-<p>When decision will be revisited: 08/2023</p>
-"
+",2021-08-01,2023-08-01
 Storybook,Frontend,Invest,lock,"<p><a href=""https://storybook.js.org/"">Storybook</a> is a tool for developing UI components in isolation for <a href="""">React</a>, Vue, <a href="""">Angular</a>, and more.</p>
 <h3>Pros</h3>
 <ul>
@@ -228,9 +200,7 @@ Storybook,Frontend,Invest,lock,"<p><a href=""https://storybook.js.org/"">Storybo
 <li>Can be difficult to write stories for components that depend on certain global state (i.e. <a href="""">Redux</a>) or retrieving backend data.</li>
 <li>Integrations for other frameworks, such as Angular, are not as robust as those for React.</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 single-spa,Frontend,Trial,leaning,"<p><a href=""https://github.com/single-spa/single-spa"">single-spa</a> is a JavaScript framework for building front-end micro-services or <a href=""https://www.thoughtworks.com/radar/techniques/micro-frontends"">micro frontends</a>, allowing you to build frontend applications that coexist and can be written in their own framework.</p>
 <h3>Pros</h3>
 <ul>
@@ -245,9 +215,7 @@ single-spa,Frontend,Trial,leaning,"<p><a href=""https://github.com/single-spa/si
 <li>Teams must be more mindful of what global state should be shared (or could be shared in the future), to avoid tight coupling of micro frontend applications.</li>
 <li>Can present unique versioning issues, particularly with shared libraries served as in-browser modules.</li>
 </ul>
-<p>When decision made: 10/1/2020</p>
-<p>When decision will be revisited: 10/1/2021</p>
-"
+",2020-10-01,2021-10-01
 Blazor,Frontend,Trial,budding,"<p><a href=""https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"">Blazor</a> lets you build interactive web UIs using C# instead of JavaScript. Blazor apps are composed of reusable web UI components implemented using C#, HTML, and CSS. Both client and server code is written in C#, allowing you to share code and libraries.</p>
 <h3>Pros</h3>
 <ul>
@@ -265,9 +233,7 @@ Blazor,Frontend,Trial,budding,"<p><a href=""https://dotnet.microsoft.com/apps/as
 </ul>
 <p>** At this time should only be used for internal tools. <a href="""">React</a> is the primary front end framework.</p>
 <p>** Consider carefully if the application should use server-side Blazor or client-side Blazor</p>
-<p>When decision made: 12/1/2020</p>
-<p>When decision will be revisited: 12/1/2021</p>
-"
+",2020-12-01,2021-12-01
 TSDX,Frontend,Trial,budding,"<p><a href=""https://github.com/formium/tsdx"">TSDX</a> is a zero-config CLI that helps with development, testing, and publishing of modern <a href="""">TypeScript</a> packages. TypeScript, Rollup, <a href="""">Jest</a>, ESlint and all other plumbing comes setup with best practices out-of-the-box.</p>
 <h3>Pros</h3>
 <ul>
@@ -280,9 +246,7 @@ TSDX,Frontend,Trial,budding,"<p><a href=""https://github.com/formium/tsdx"">TSDX
 <li>Customization requires overriding the Rollup config, which can potentially invalidate internal guarantees and assumptions making it fragile against updates.</li>
 <li>Storybook integration uses webpack, requiring modifications to both the webpack config and Rollup config when customizing.</li>
 </ul>
-<p>When decision made: 8/1/2020</p>
-<p>When decision will be revisited: 8/1/2021</p>
-"
+",2020-08-01,2021-08-01
 Next.js,Frontend,Trial,budding,"<p><a href=""https://nextjs.org/"">Next.js</a> is a framework for building server-side rendered <a href="""">React</a> applications. It provides a full-featured developer experience out of the box, with a wide array of plugins.</p>
 <h3>Pros</h3>
 <ul>
@@ -296,9 +260,7 @@ Next.js,Frontend,Trial,budding,"<p><a href=""https://nextjs.org/"">Next.js</a> i
 <li>Must run on a Node server (unless using static site generation).</li>
 <li>Opinionated framework locks you in to the Next.js way of routing, data fetching, etc.</li>
 </ul>
-<p>When decision made: 12/1/2020</p>
-<p>When decision will be revisited: 12/1/2020</p>
-"
+",2020-12-01,2020-12-01
 React Native,Frontend,Trial,budding,"<p><a href=""https://reactnative.dev"">React Native</a> is a framework for building native mobile applications using <a href="""">React</a>.</p>
 <h3>Pros</h3>
 <ul>
@@ -312,9 +274,7 @@ React Native,Frontend,Trial,budding,"<p><a href=""https://reactnative.dev"">Reac
 <li>Still hasn’t hit a 1.0 release. Developers can run into breaking changes in tools and dependencies between versions.</li>
 <li>Still need native mobile development experience for implementing more advanced features.</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 LogRocket,Frontend,Invest,leaning,"<p><a href=""https://www.logrocket.com/"">LogRocket</a> lets you replay what users do on your site, helping you reproduce bugs and fix issues faster.</p>
 <h3>Pros</h3>
 <ul>
@@ -328,9 +288,7 @@ LogRocket,Frontend,Invest,leaning,"<p><a href=""https://www.logrocket.com/"">Log
 <li>Can be rather costly</li>
 <li>Introduces overhead to the web application</li>
 </ul>
-<p>When decision made: 11/19/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-11-19,2021-05-01
 Tailwind CSS,Frontend,Trial,budding,"<p><a href=""https://tailwindcss.com/"">Tailwind CSS</a> is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override.</p>
 <h3>Pros</h3>
 <ul>
@@ -344,9 +302,7 @@ Tailwind CSS,Frontend,Trial,budding,"<p><a href=""https://tailwindcss.com/"">Tai
 <li>Larger learning curve due to the number of utility classes available.</li>
 <li>Can result in massive CSS bundles if tooling is not configured to purge unused classes for production builds.</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Angular,Frontend,Hold,none,"<p><a href=""https://angular.io"">Angular</a> is an application design framework and development platform for creating efficient and sophisticated single-page apps.</p>
 <h3>Pros</h3>
 <ul>
@@ -359,9 +315,7 @@ Angular,Frontend,Hold,none,"<p><a href=""https://angular.io"">Angular</a> is an 
 <li>Steep learning curve. Even for developers coming from <a href="""">AngularJS</a>, the framework is completely different. It follows some sophisticated design patterns that can be difficult to understand at first.</li>
 <li>Requires a lot more boilerplate code than its contemporaries.</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Angular CLI,Frontend,Hold,none,"<p>The <a href=""https://angular.io/cli"">Angular CLI</a> is a command-line interface tool that you use to initialize, develop, scaffold, and maintain Angular applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -375,9 +329,7 @@ Angular CLI,Frontend,Hold,none,"<p>The <a href=""https://angular.io/cli"">Angula
 <li>Not easily customizable without ejecting.</li>
 <li>Lots of commands and options, making it a little unweildy.</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Protractor,Frontend,Divest,none,"<p><a href=""https://protractortest.org"">Protractor</a> is an end-to-end test framework for Angular and AngularJS applications. Protractor runs tests against your application running in a real browser, interacting with it as a user would.</p>
 <h3>Pros</h3>
 <ul>
@@ -390,9 +342,7 @@ Protractor,Frontend,Divest,none,"<p><a href=""https://protractortest.org"">Protr
 <li>Specifically built for testing Angular and AngularJS applications.</li>
 <li>Difficult to debug tests.</li>
 </ul>
-<p>When decision made: 8/2021</p>
-<p>When decision will be revisited: 8/2023</p>
-"
+",2021-08-01,2023-08-01
 Karma,Frontend,Hold,none,"<p><a href=""http://karma-runner.github.io/5.0/"">Karma</a> is a test runner that allows you to execute JavaScript code in multiple real browsers.</p>
 <h3>Pros</h3>
 <ul>
@@ -405,9 +355,7 @@ Karma,Frontend,Hold,none,"<p><a href=""http://karma-runner.github.io/5.0/"">Karm
 <li>Slower than other test runners that don’t run in an actual browser.</li>
 <li>Difficult to mock imports of ES6/TypeScript modules.</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2021-05-01,2021-05-01
 Jasmine,Frontend,Hold,none,"<p><a href=""https://jasmine.github.io/"">Jasmine</a> is a behavior-driven development framework for testing JavaScript code.</p>
 <h3>Pros</h3>
 <ul>
@@ -419,9 +367,7 @@ Jasmine,Frontend,Hold,none,"<p><a href=""https://jasmine.github.io/"">Jasmine</a
 <ul>
 <li>Does not include a test runner, making it reliant on other tools like <a href="""">Karma</a>.</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2021-05-01,2021-05-01
 Bootstrap,Frontend,Hold,budding,"<p>Quickly design and customize responsive mobile-first sites with <a href=""https://getbootstrap.com/"">Bootstrap</a>, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
 <h3>Pros</h3>
 <ul>
@@ -437,9 +383,7 @@ Bootstrap,Frontend,Hold,budding,"<p>Quickly design and customize responsive mobi
 <li>Coupled to JQuery in some cases</li>
 <li>Relative large size</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Foundation,Frontend,Hold,none,"<p><a href=""https://get.foundation/index.html"">Foundation</a> is a responsive front-end framework that makes it easy to design responsive websites and apps.</p>
 <h3>Pros</h3>
 <ul>
@@ -453,9 +397,7 @@ Foundation,Frontend,Hold,none,"<p><a href=""https://get.foundation/index.html"">
 <li>Smaller community. Not as well supported as frameworks like Bootstrap.</li>
 <li>Requires familiarity with the required markup and CSS classes to leverage component styles.</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2021-05-01,2021-05-01
 NPM CLI,Frontend,Invest,none,"<p><a href=""https://docs.npmjs.com/cli-documentation/"">NPM CLI</a> is the command line interface for Node Package Manager (NPM).<br />
 It can be used for managing dependencies in an application or library, publishing packages to the registry, and running scripts within an application.</p>
 <h3>Pros</h3>
@@ -468,8 +410,7 @@ It can be used for managing dependencies in an application or library, publishin
 <li>Security concerns with allowing packages to run code on installation automatically.</li>
 <li>Slower than <a href="""">Yarn</a>.</li>
 </ul>
-<p>When decision made: 01/30/2025</p>
-"
+",2025-01-30,
 Unity3D,Frontend,Hold,none,"<p><a href=""https://unity.com/"">Unity3D</a> is a cross-platform game engine developed by Unity Technologies. Unity’s real-time 3D development platform lets artists, designers and developers work together to create amazing immersive and interactive experiences.</p>
 <h3>Pros</h3>
 <ul>
@@ -485,9 +426,7 @@ Unity3D,Frontend,Hold,none,"<p><a href=""https://unity.com/"">Unity3D</a> is a c
 <li>Licensing cost for corporations</li>
 <li>Lack of accessibility support</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 AngularJS,Frontend,Divest,none,"<p><a href=""https://angularjs.org/"">AngularJS</a> refers to the versions of <a href="""">Angular</a> prior to v2.<br />
 It is a full-featured web application framework for building single-page applications.</p>
 <h3>Pros</h3>
@@ -500,9 +439,7 @@ It is a full-featured web application framework for building single-page applica
 <li>Nearing end of life. Entered 3 year Long Term Support period on July 1, 2018.</li>
 <li>Not nearly as performant as more modern frameworks, like <a href="""">React</a> or <a href="""">Angular</a>.</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 LESS,Frontend,Divest,none,"<p><a href=""http://lesscss.org/"">LESS</a> is a CSS extension language, similar to <a href="""">SASS</a>.</p>
 <h3>Pros</h3>
 <ul>
@@ -515,9 +452,7 @@ LESS,Frontend,Divest,none,"<p><a href=""http://lesscss.org/"">LESS</a> is a CSS 
 <li>Makes it really easy to write bad CSS, like deeply nested selectors.</li>
 <li>Another thing to configure in your build tooling.</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2021-05-01,2021-05-01
 KnockoutJS,Frontend,Divest,none,"<p><a href=""https://knockoutjs.com/"">KnockoutJS</a> is a JavaScript MVVM (a modern variant of MVC) library that makes it easier to create rich, desktop-like user interfaces with JavaScript and HTML. It uses observers to make your UI automatically stay in sync with an underlying data model, along with a powerful and extensible set of declarative bindings to enable productive development.</p>
 <h3>Pros</h3>
 <ul>
@@ -531,9 +466,7 @@ KnockoutJS,Frontend,Divest,none,"<p><a href=""https://knockoutjs.com/"">Knockout
 <li>No longer updated, last update Nov 5, 2019</li>
 </ul>
 <p>Replaced by <a href="""">React</a>.</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Selenium WebDriver,Frontend,Divest,none,"<p><a href=""https://www.selenium.dev/"">Selenium WebDriver</a> drives a browser natively, as a user would, either locally or on a remote machine using the Selenium server.</p>
 <h3>Pros</h3>
 <ul>
@@ -550,9 +483,7 @@ Selenium WebDriver,Frontend,Divest,none,"<p><a href=""https://www.selenium.dev/"
 <li>Requires a browser to run</li>
 <li>Difficult to debug tests.</li>
 </ul>
-<p>When decision made: 8/2021</p>
-<p>When decision will be revisited: 8/2023</p>
-"
+",2021-08-01,2023-08-01
 Applitools,Frontend,Invest,lock,"<p><a href=""https://applitools.com/"">Applitools</a> enables visual regression test automation using visual AI.</p>
 <h3>Pros</h3>
 <ul>
@@ -566,9 +497,7 @@ Applitools,Frontend,Invest,lock,"<p><a href=""https://applitools.com/"">Applitoo
 <li>Cost, it requires a montly subscription fee that limits the number to screenshot comparisons</li>
 </ul>
 <p>Used in conjunction with <a href="""">Cypress</a> and <a href="""">Protractor</a>.</p>
-<p>When decision made: 08/2021</p>
-<p>When decision will be revisited: 08/2023</p>
-"
+",2021-08-01,2023-08-01
 Ant Design,Frontend,Divest,none,"<p><a href=""https://ant.design/"">Ant Design</a> is a powerful and widely-used React UI library that provides a comprehensive collection of pre-designed components and design resources for building visually appealing and user-friendly web applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -581,9 +510,7 @@ Ant Design,Frontend,Divest,none,"<p><a href=""https://ant.design/"">Ant Design</
 <ul>
 <li>There is some risk that Ant Design could get us in some hot water with TX-RAMP and limit our ability to sell in Texas.</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 ASP.NET Core,Backend,Invest,lock,"<p><a href=""https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core"">ASP.NET Core</a> is built on the new <a href="""">.NET Core</a> framework but is designed for the web. As with .NET Core this is an open source framework. While <a href=""http://ASP.NET"">ASP.NET</a> can be used for server side rendering pages the WNE strong preference is that the frontend apps are single page applications (SPAs) using <a href="""">React</a>.</p>
 <h3>Pros</h3>
 <ul>
@@ -595,9 +522,7 @@ ASP.NET Core,Backend,Invest,lock,"<p><a href=""https://dotnet.microsoft.com/lear
 <ul>
 <li>Lack of packages in some scenarios</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 .NET Core App,Backend,Invest,lock,"<p><a href=""https://docs.microsoft.com/en-us/dotnet/core/about"">.NET Core</a> is the successor the .NET framework. It differs from the legacy .NET framework by being cross platform and open source. In many respects .NET core has learned from Node and Ruby and other languages and made a modern ecosystem for C# programmers. AWS Lambda functions are a great way to run snippets of code without worrying about the underlying infrastructure the code would run on. Currently this is most useful as means to cheaply process events from Kinesis, DynamoDb streams, SNS, or SQS. AWS has provided all of the plumbing to handle this efficiently.</p>
 <h3>Pros</h3>
 <ul>
@@ -611,9 +536,7 @@ ASP.NET Core,Backend,Invest,lock,"<p><a href=""https://dotnet.microsoft.com/lear
 <li>Not as wide of a package base as some other language frameworks</li>
 <li>Cannot be compiled as a single standalone binary (you must have .Net Core runtime available)</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 Java,Backend,Invest,lock,"<p><a href=""https://spring.io/"">Java</a>is cross-platform, statically typed, general-purpose programming language
 <h3>Pros</h3>
 <ul>
@@ -625,9 +548,7 @@ Java,Backend,Invest,lock,"<p><a href=""https://spring.io/"">Java</a>is cross-pla
 <ul>
 <li>Missing syntax surgar of mordern langauges</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 Spring Boot,Backend,Hold,lock,"<p><a href=""https://spring.io/"">Spring Boot</a> makes it easy to create stand-alone, production-grade Spring based Applications that you can “just run”.</p>
 <p>We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need minimal Spring configuration.</p>
 <h3>Pros</h3>
@@ -642,9 +563,7 @@ Spring Boot,Backend,Hold,lock,"<p><a href=""https://spring.io/"">Spring Boot</a>
 <li>Unused libraries can bloat overall application size</li>
 <li>Limited control of your application</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 jMeter,Backend,Hold,confident,"<p><a href=""https://jmeter.apache.org/"">jMeter</a> is open source software, a 100% pure Java application designed to load test functional behavior and measure performance. It was originally designed for testing Web Applications but has since expanded to other test functions.</p>
 <h3>Pros</h3>
 <ul>
@@ -657,9 +576,7 @@ jMeter,Backend,Hold,confident,"<p><a href=""https://jmeter.apache.org/"">jMeter<
 <li>UI is not very intuitive</li>
 <li>Can be very complex to set up</li>
 </ul>
-<p>When decision made: 1/1/2023</p>
-<p>When decision will be revisited: 1/1/2024</p>
-"
+",2023-01-01,2024-01-01
 gRPC,Backend,Trial,budding,"<p><a href=""https://grpc.io/"">gRPC</a> is a modern open source high performance RPC framework that can run in any environment. It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing, health checking and authentication. It is also applicable in last mile of distributed computing to connect devices, mobile applications and browsers to backend services.</p>
 <h3>Pros</h3>
 <ul>
@@ -673,9 +590,7 @@ gRPC,Backend,Trial,budding,"<p><a href=""https://grpc.io/"">gRPC</a> is a modern
 <li>Not universally supported</li>
 </ul>
 <p>** Being considered for interservice communication requests</p>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 ExcaliDraw,Infrastructure,Invest,budding,"<p><a href=""https://excalidraw.com/"">Excalidraw</a> is an open source virtual hand-drawn style whiteboard for building software diagrams.</p>
 <h3>Pros</h3>
 <ul>
@@ -689,9 +604,7 @@ ExcaliDraw,Infrastructure,Invest,budding,"<p><a href=""https://excalidraw.com/""
 <li>No enterprise option</li>
 </ul>
 <p>** Being used for building software diagrams</p>
-<p>When decision made: 1/1/2023</p>
-<p>When decision will be revisited: 1/1/2024</p>
-"
+",2023-01-01,2024-01-01
 GraphQL,Backend,Hold,confident,"<p><a href=""https://graphql.org/"">GraphQL</a> is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.</p>
 <h3>Pros</h3>
 <ul>
@@ -704,9 +617,7 @@ GraphQL,Backend,Hold,confident,"<p><a href=""https://graphql.org/"">GraphQL</a> 
 <li>Possible to create extremely costly queries unintentionally</li>
 <li>Lacks support by all libraries and packages</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 Python,Backend,Hold,none,"<p><a href=""https://www.python.org/"">Python</a> is powerful… and fast; plays well with others; runs everywhere; is friendly &amp; easy to learn; is Open.</p>
 <h3>Pros</h3>
 <ul>
@@ -721,9 +632,7 @@ Python,Backend,Hold,none,"<p><a href=""https://www.python.org/"">Python</a> is p
 <li>Lack of braces and relying on spacing can be tricky for new programmers</li>
 <li>Not considered the best platform for web apis</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Node,Backend,Hold,none,"<p><a href=""https://nodejs.org"">Node</a> is similar in design to, and influenced by, systems like Ruby’s Event Machine and Python’s Twisted. Node.js takes the event model a bit further. It presents an event loop as a runtime construct instead of as a library. In other systems, there is always a blocking call to start the event-loop. Typically, behavior is defined through callbacks at the beginning of a script, and at the end a server is started through a blocking call like EventMachine::run(). In Node.js, there is no such start-the-event-loop call. Node.js simply enters the event loop after executing the input script. Node.js exits the event loop when there are no more callbacks to perform. This behavior is like browser JavaScript — the event loop is hidden from the user.</p>
 <p>HTTP is a first-class citizen in Node.js, designed with streaming and low latency in mind. This makes Node.js well suited for the foundation of a web library or framework.</p>
 <p>Node.js being designed without threads doesn’t mean you can’t take advantage of multiple cores in your environment. Child processes can be spawned by using our child_process.fork() API, and are designed to be easy to communicate with. Built upon that same interface is the cluster module, which allows you to share sockets between processes to enable load balancing over your cores.</p>
@@ -740,8 +649,7 @@ Node,Backend,Hold,none,"<p><a href=""https://nodejs.org"">Node</a> is similar in
 <li>Not statically typed</li>
 <li>Enterprise support can be an issue</li>
 </ul>
-<p>When decision made: 01/30/2025</p>
-"
+",2025-01-30,
 Go,Backend,Hold,budding,"<p><a href=""https://golang.org/"">Go</a> is a C style language with influence from JAVA. Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It’s a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language.</p>
 <h3>Pros</h3>
 <ul>
@@ -755,8 +663,7 @@ Go,Backend,Hold,budding,"<p><a href=""https://golang.org/"">Go</a> is a C style 
 <li>Package management is still lacking</li>
 <li>Not well suited for web apis</li>
 </ul>
-<p>When decision made: 01/30/2025</p>
-"
+",2025-01-30,
 Ruby on Rails,Backend,Hold,budding,"<p><a href=""https://www.ruby-lang.org/en/"">Ruby on Rails</a> Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Rails is a web application development framework written in the Ruby programming language. It is designed to make programming web applications easier by making assumptions about what every developer needs to get started. It allows you to write less code while accomplishing more than many other languages and frameworks. Experienced Rails developers also report that it makes web application development more fun.</p>
 <p>Rails is opinionated software. It makes the assumption that there is a “best” way to do things, and it’s designed to encourage that way - and in some cases to discourage alternatives. If you learn “The Rails Way” you’ll probably discover a tremendous increase in productivity. If you persist in bringing old habits from other languages to your Rails development, and trying to use patterns you learned elsewhere, you may have a less happy experience.</p>
 <h3>Pros</h3>
@@ -773,9 +680,7 @@ Ruby on Rails,Backend,Hold,budding,"<p><a href=""https://www.ruby-lang.org/en/""
 <li>Not as performant as other more modern approaches</li>
 <li>Lack of flexibility</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 Azure web apps,Backend,Divest,none,"<p><a href=""https://azure.microsoft.com/en-us/services/app-service/web/"">Azure Web Apps</a> is a simple way to manage web applications built on <a href=""http://ASP.NET"">ASP.NET</a>. The application can then be bundled and placed on these servers that are running IIS. Generally speaking we do not encourage web apps. Containers should be utilized within <a href="""">Kubernetes</a>.</p>
 <h3>Pros</h3>
 <ul>
@@ -789,9 +694,7 @@ Azure web apps,Backend,Divest,none,"<p><a href=""https://azure.microsoft.com/en-
 <li>Slow hardware</li>
 <li>Customization is difficult (e.g. put an updated version of .NET Framework in place)</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 Azure cloud services,Backend,Divest,none,"<p><a href=""https://azure.microsoft.com/en-us/services/cloud-services/"">Azure Cloud Services</a> is a simple way to manage a fleet of virual machines. An application bundle is built and then placed on the machines. Generally speaking we do not encourage provisioning an entire VM for a single application. Containers should be utilized within <a href="""">Kubernetes</a>.</p>
 <h3>Pros</h3>
 <ul>
@@ -804,9 +707,7 @@ Azure cloud services,Backend,Divest,none,"<p><a href=""https://azure.microsoft.c
 <li>Expensive</li>
 <li>Customization is difficult (e.g. put an updated version of .NET Framework in place)</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 VB.Net,Backend,Divest,none,"<p><a href=""https://docs.microsoft.com/en-us/dotnet/visual-basic/"">VB.NET</a> is engineered to help you productively build type-safe and object-oriented apps. Visual Basic is a fast and easy way to create .NET apps.</p>
 <h3>Pros</h3>
 <ul>
@@ -819,9 +720,7 @@ VB.Net,Backend,Divest,none,"<p><a href=""https://docs.microsoft.com/en-us/dotnet
 <li>Microsoft doesn’t back <a href=""http://VB.NET"">VB.NET</a> heavily</li>
 <li>Lack of libraries</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 .NET Full Framework,Backend,Divest,none,"<p><a href=""https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet-framework"">.NET Full Framework</a> .NET Framework is a software development framework for building and running applications on Windows.</p>
 <h3>Pros</h3>
 <ul>
@@ -837,9 +736,7 @@ VB.Net,Backend,Divest,none,"<p><a href=""https://docs.microsoft.com/en-us/dotnet
 <li>Does not use modern approaches to software development</li>
 </ul>
 <p>The .NET Full Framework has been replaced by either <a href="""">.NET Core App</a> or <a href="""">ASP.NET Core</a>.</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 AWS Kinesis,Data,Invest,confident,"<p><a href=""https://aws.amazon.com/kinesis/"">AWS Kinesis</a> makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information. Amazon Kinesis offers key capabilities to cost-effectively process streaming data at any scale, along with the flexibility to choose the tools that best suit the requirements of your application. With Amazon Kinesis, you can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data for machine learning, analytics, and other applications. Amazon Kinesis enables you to process and analyze data as it arrives and respond instantly instead of having to wait until all your data is collected before the processing can begin.</p>
 <h3>Pros</h3>
 <ul>
@@ -855,9 +752,7 @@ AWS Kinesis,Data,Invest,confident,"<p><a href=""https://aws.amazon.com/kinesis/"
 <li>Possible to hit throughput limits on a given partition within a shard easily</li>
 <li>Consumers must use the Kinesis Client Library (Java)</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 AWS SNS,Data,Invest,confident,"<p><a href=""https://aws.amazon.com/sns/?whats-new-cards.sort-by=item.additionalFields.postDateTime&amp;whats-new-cards.sort-order=desc"">AWS SNS</a> is a highly available, durable, secure, fully managed pub/sub messaging service that enables you to decouple microservices, distributed systems, and serverless applications. Amazon SNS provides topics for high-throughput, push-based, many-to-many messaging. Using Amazon SNS topics, your publisher systems can fan out messages to a large number of subscriber endpoints for parallel processing, including Amazon SQS queues, AWS Lambda functions, and HTTP/S webhooks. Additionally, SNS can be used to fan out notifications to end users using mobile push, SMS, and email.</p>
 <h3>Pros</h3>
 <ul>
@@ -871,9 +766,7 @@ AWS SNS,Data,Invest,confident,"<p><a href=""https://aws.amazon.com/sns/?whats-ne
 <li>Specific message size limits</li>
 <li>More costly than self host options</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Snowflake,Data,Invest,lock,"<p><a href=""hhttps://www.snowflake.com/"">Snowflake</a> is a modern data warehouse meant to augment data lakes.</p>
 <p>Generally speaking Api Gateway is a cool technology but there is a strong preference to run appliations on our existing <a href="""">Kubernetes</a> clusters to take advantage of free resources that are already available.</p>
 <h3>Pros</h3>
@@ -892,9 +785,7 @@ Snowflake,Data,Invest,lock,"<p><a href=""hhttps://www.snowflake.com/"">Snowflake
 <li>No on premise option</li>
 <li>May not perform as well as other technologies when optimized</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 DynamoDB,Data,Invest,lock,"<p>Dynamo is a NOSQL database hosted and manged by AWS. It is built with scale in mind and we have had good experiences building solid scalable applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -907,7 +798,7 @@ DynamoDB,Data,Invest,lock,"<p>Dynamo is a NOSQL database hosted and manged by AW
 <li>Requires up front knowledge of query patterns</li>
 <li>Difficult to query ad-hoc</li>
 </ul>
-<p>Dynamo should be used by default for any microservice that is storing things as operational records that do not have heavy query requirements. For more information see <a href=""https://medium.com/imaginelearning/bring-dynamo-to-the-data-science-party-2d961b72bb8d?source=friends_link&amp;sk=5dd7bd16cbf678bb926122549d83cb4a"">This great Medium article</a></p>"
+<p>Dynamo should be used by default for any microservice that is storing things as operational records that do not have heavy query requirements. For more information see <a href=""https://medium.com/imaginelearning/bring-dynamo-to-the-data-science-party-2d961b72bb8d?source=friends_link&amp;sk=5dd7bd16cbf678bb926122549d83cb4a"">This great Medium article</a></p>",,
 Elasticsearch,Data,Divest,confident,"<p><a href=""https://elastic.co"">Elasticsearch</a> is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.</p>
 <h3>Pros</h3>
 <ul>
@@ -920,9 +811,7 @@ Elasticsearch,Data,Divest,confident,"<p><a href=""https://elastic.co"">Elasticse
 <li>No ability to join documents directly</li>
 <li>Can be difficult to setup and maintain</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 OpenSearch,Data,Invest,lock,"<p><a href=""https://opensearch.org/"">OpenSearch</a> is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. It centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.</p>
 <h3>Pros</h3>
 <ul>
@@ -935,9 +824,7 @@ OpenSearch,Data,Invest,lock,"<p><a href=""https://opensearch.org/"">OpenSearch</
 <ul>
 <li>Query language can be difficult</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 Redis,Data,Invest,confident,"<p><a href=""https://redis.io/"">Redis</a> is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes with radius queries and streams.</p>
 <h3>Pros</h3>
 <ul>
@@ -950,9 +837,7 @@ Redis,Data,Invest,confident,"<p><a href=""https://redis.io/"">Redis</a> is an op
 <li>Replication isn’t simple if required</li>
 <li>No autoscaling options froms cloud providers</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Postgres,Data,Invest,lock,"<p><a href=""https://www.postgresql.org/"">Postgres</a> s a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.</p>
 <h3>Pros</h3>
 <ul>
@@ -968,10 +853,8 @@ Postgres,Data,Invest,lock,"<p><a href=""https://www.postgresql.org/"">Postgres</
 <li>Scaling for large loads can be challenging</li>
 <li>Setup and configuration can require more work than other databases</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
-Postgres Aurora Serverless,Data,Invest,budding,"<p><a href=""https://aws.amazon.com/rds/aurora/serverless/"">Postgres Amazon Aurora Serverless</a> is an on-demand, autoscaling configuration for Amazon Aurora. </p>
+",2020-05-01,2021-05-01
+Postgres Auorara Serverless,Data,Invest,budding,"<p><a href=""https://aws.amazon.com/rds/aurora/serverless/"">Postgres Amazon Aurora Serverless</a> is an on-demand, autoscaling configuration for Amazon Aurora. </p>
 <h3>Pros</h3>
 <ul>
 <li>On Demand</li>
@@ -980,8 +863,7 @@ Postgres Aurora Serverless,Data,Invest,budding,"<p><a href=""https://aws.amazon.
 <ul>
 <li>Newish</li>
 </ul>
-<p>When decision made: 1/30/2025</p>
-"
+",2025-01-30,
 PowerBI,Data,Invest,confident,"<p><a href=""https://powerbi.microsoft.com/en-us/"">PowerBI</a> is a collection of analytics tools developed by Microsoft. Over the years, it is one of the top BI tools used by analysts. When it comes to visualisation, Power BI is resolute and has a wide plethora of options and customisation. What’s more, it can even load various customisations from other BI platforms.</p>
 <h3>Pros</h3>
 <ul>
@@ -1001,10 +883,8 @@ PowerBI,Data,Invest,confident,"<p><a href=""https://powerbi.microsoft.com/en-us/
 <li>QuickSight</li>
 <li>Tableau</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
 <p>Description last updated: 2/8/2023</p>
-"
+",2020-05-01,2021-05-01
 AWS Kinesis Data Analytics (Apache Flink),Data,Trial,budding,"<p><a href=""https://aws.amazon.com/kinesis/data-analytics/"">AWS Kinesis Data Analytics</a> is the easiest way to analyze streaming data, gain actionable insights, and respond to your business and customer needs in real time. Amazon Kinesis Data Analytics reduces the complexity of building, managing, and integrating streaming applications with other AWS services. SQL users can easily query streaming data or build entire streaming applications using templates and an interactive SQL editor. Java developers can quickly build sophisticated streaming applications using open source Java libraries and AWS integrations to transform and analyze data in real-time.</p>
 <h3>Pros</h3>
 <ul>
@@ -1016,9 +896,7 @@ AWS Kinesis Data Analytics (Apache Flink),Data,Trial,budding,"<p><a href=""https
 <ul>
 <li>More expensive than running Flink on its own</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Postgres (Aurora Serverless),Data,Trial,budding,"<p><a href=""https://aws.amazon.com/rds/aurora/serverless/?nc=sn&amp;loc=2&amp;dn=6"">Aurora Serverless (Postgres compatible)</a> is an on-demand, auto-scaling configuration for Amazon Aurora (MySQL-compatible and PostgreSQL-compatible editions), where the database will automatically start up, shut down, and scale capacity up or down based on your application’s needs. It enables you to run your database in the cloud without managing any database instances. It’s a simple, cost-effective option for infrequent, intermittent, or unpredictable workloads.</p>
 <h3>Pros</h3>
 <ul>
@@ -1032,9 +910,7 @@ Postgres (Aurora Serverless),Data,Trial,budding,"<p><a href=""https://aws.amazon
 <li>Only supported with specific versions of Postgres</li>
 </ul>
 <p>Aurora Serverless v2 can now be considered for both non-prod and prod use cases</p>
-<p>When decision made: 10/21/2024</p>
-<p>When decision will be revisited: 5/1/2025</p>
-"
+",2024-10-21,2025-05-01
 Databricks,Data,Trial,confident,"<p><a href=""https://databricks.com"">Databricks</a> is a service built around data systems and its processes. The intent is to make the configuration of data systems simpler and more accessible to the masses.</p>
 <h3>Pros</h3>
 <ul>
@@ -1049,9 +925,7 @@ Databricks,Data,Trial,confident,"<p><a href=""https://databricks.com"">Databrick
 <li>Expensive. Per node markup of $.40 per hour on top of EC2</li>
 <li>Lack of configuration controls</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 MongoDB,Data,Divest,none,"<p><a href=""hhttps://www.mongodb.com/"">MongoDB</a> is a general purpose, document-based, distributed database built for modern application developers and for the cloud era.</p>
 <h3>Pros</h3>
 <ul>
@@ -1065,9 +939,7 @@ MongoDB,Data,Divest,none,"<p><a href=""hhttps://www.mongodb.com/"">MongoDB</a> i
 <li>Slow full text search</li>
 <li>Sharding is complicated to set up</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 AWS Glue,Data,Hold,none,"<p><a href=""https://aws.amazon.com/glue/?whats-new-cards.sort-by=item.additionalFields.postDateTime&amp;whats-new-cards.sort-order=desc"">AWS Glue</a> is a fully managed extract, transform, and load (ETL) service that makes it easy for customers to prepare and load their data for analytics. You can create and run an ETL job with a few clicks in the AWS Management Console. You simply point AWS Glue to your data stored on AWS, and AWS Glue discovers your data and stores the associated metadata (e.g. table definition and schema) in the AWS Glue Data Catalog. Once cataloged, your data is immediately searchable, queryable, and available for ETL.</p>
 <h3>Pros</h3>
 <ul>
@@ -1080,9 +952,7 @@ AWS Glue,Data,Hold,none,"<p><a href=""https://aws.amazon.com/glue/?whats-new-car
 <li>More expensive for continual jobs</li>
 <li>Less performant than other offerings</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 SQL Server,Data,Divest,none,"<p><a href=""https://www.microsoft.com/en-us/sql-server"">SQL Server</a> is a relational database technology backed by Microsoft. SQL Server has been around for many years and has improved significantly over the years to work well with enterprise applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -1096,9 +966,7 @@ SQL Server,Data,Divest,none,"<p><a href=""https://www.microsoft.com/en-us/sql-se
 <li>High licensing cost</li>
 <li>Not a first class citizen on AWS</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 AWS Redshift,Data,Divest,none,"<p><a href=""https://aws.amazon.com/redshift/"">AWS Redshift</a> is the world’s fastest cloud data warehouse and gets faster every year. For performance intensive workloads you can use the new RA3 instances to get up to 3x the performance of any cloud data warehouse.</p>
 <h3>Pros</h3>
 <ul>
@@ -1112,9 +980,7 @@ AWS Redshift,Data,Divest,none,"<p><a href=""https://aws.amazon.com/redshift/"">A
 <li>Very expensive</li>
 <li>Storage and compute historically not configurable separately (this is changing)</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Active Warehouse (Ruby),Data,Divest,none,"<p>The <a href=""https://github.com/activewarehouse/activewarehouse"">Active Warehouse (Ruby)</a> library provides classes and functions which help with building Data Warehouses using Rails.</p>
 <h3>Pros</h3>
 <ul>
@@ -1128,9 +994,7 @@ Active Warehouse (Ruby),Data,Divest,none,"<p>The <a href=""https://github.com/ac
 <li>Inactive for almost 6 years</li>
 </ul>
 <p>Data warehousing is migrating to <a href="""">Snowflake</a>.</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 MySQL,Data,Divest,none,"<p><a href=""https://www.mysql.com/"">MySQL</a> enables you to deliver high-performance and scalable Online Transaction Processing (OLTP) applications. It provides the ease of use that has made MySQL famous along with industrial strength performance and reliability.</p>
 <h3>Pros</h3>
 <ul>
@@ -1143,9 +1007,7 @@ MySQL,Data,Divest,none,"<p><a href=""https://www.mysql.com/"">MySQL</a> enables 
 <li>Nascent support for documents</li>
 <li>Can be slower for write-heavy applications</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 ELK (OpenDistro),Infrastructure,Divest,confident,"<p>ELK is the combination of Elasticsearch, Kibana and Logstash. See <a href="""">Elasticsearch</a> for more information on that but Logstash is a good ingester of data into Elasticsearch. This combination of services makes for a solid logging solution. Additionally, AWS has contributed back to the community with <a href=""https://opendistro.github.io/for-elasticsearch/"">OpenDistro</a> to fill the gaps in authentication and management of the system.</p>
 <h3>Pros</h3>
 <ul>
@@ -1159,9 +1021,7 @@ ELK (OpenDistro),Infrastructure,Divest,confident,"<p>ELK is the combination of E
 <li>Self Deployment can be painful</li>
 </ul>
 <p><a href=""https://engineering.grab.com/structured-logging"">Structured logs</a> should be used where possible to make the searches as efficient as possible.</p>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Kubernetes,Infrastructure,Invest,lock,"<p>Kubernetes is a container orchestration system. Kubernetes has become the de facto standard in the last few years when it comes to running containers.</p>
 <h3>Pros</h3>
 <ul>
@@ -1176,9 +1036,7 @@ Kubernetes,Infrastructure,Invest,lock,"<p>Kubernetes is a container orchestratio
 <li>Initial configuration can be very daunting</li>
 <li>Required updates on the regular to not fall behind</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Docker,Infrastructure,Invest,lock,"<p>Docker is a means of packaging an application with all of its dependencies required to run. You can think of a Docker container as a lightweight virtual machine without the overhead of the OS. Typically we prefer smaller containers based on the Alpine images. When you build your applications this way you can have the same deployment patterns with all applications regardless of language.</p>
 <h3>Pros</h3>
 <ul>
@@ -1191,9 +1049,7 @@ Docker,Infrastructure,Invest,lock,"<p>Docker is a means of packaging an applicat
 <li>Debugging can be more difficult if there is an issue with the container itself</li>
 </ul>
 <p>Combining these benefits with <a href="""">Kubernetes</a> leads to a great way to manage all applications efficiently.</p>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2021-05-01,2021-05-01
 AWS Lambda (event processing),Infrastructure,Invest,confident,"<p>AWS Lambda functions are a great way to run snippets of code without worrying about the underlying infrastructure the code would run on. Currently this is most useful as means to cheaply process events from Kinesis, DynamoDb streams, SNS, or SQS. AWS has provided all of the plumbing to handle this efficiently.</p>
 <h3>Pros</h3>
 <ul>
@@ -1206,9 +1062,7 @@ AWS Lambda (event processing),Infrastructure,Invest,confident,"<p>AWS Lambda fun
 <li>Deployment pipelines for the functions themselves is not ideal. Even when using <a href="""">Terraform</a> you have to resort to zip files.</li>
 <li>You must wait for updated frameworks (new versions of Node or .NET core for example) to be available on AWS</li>
 </ul>
-<p>When decision made:</p>
-<p>When decision will be revisited:</p>
-"
+",,
 Fluentd,Infrastructure,Invest,confident,"<p><a href=""https://www.fluentd.org/"">Fluentd</a> is an open source tool that will automatically collect your logs and send them to an archiving source. There are many possibilities with the tool but we have found that running Fluentd as a daemon-set on our <a href="""">Kubernetes</a> cluster and logging things to <code>stdout</code> as the most effective logging solution.</p>
 <h3>Pros</h3>
 <ul>
@@ -1220,9 +1074,7 @@ Fluentd,Infrastructure,Invest,confident,"<p><a href=""https://www.fluentd.org/""
 <ul>
 <li>Configuration is a bit cryptic</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2021-05-01,2021-05-01
 Micronaut,Backend,Invest,lock,"<p><a href=""https://micronaut.io/"">Micronaut</a> is a modern, JVM-based, full-stack framework for building modular, easily testable microservice and serverless applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -1237,9 +1089,7 @@ Micronaut,Backend,Invest,lock,"<p><a href=""https://micronaut.io/"">Micronaut</a
 <li>Paradigms to reactive programming take time to learn.</li>
 <li>Yet Another Framework</li>
 </ul>
-<p>When decision made: 11/7/2024</p>
-<p>When decision will be revisited: 1/1/2026</p>
-"
+",2024-11-07,2026-01-01
 Kotlin,Backend,Invest,confident,"<p><a href=""https://kotlinlang.org/"">Kotlin</a> is a cross-platform, statically typed, general-purpose programming language with type inference.</p>
 <h3>Pros</h3>
 <ul>
@@ -1253,9 +1103,7 @@ Kotlin,Backend,Invest,confident,"<p><a href=""https://kotlinlang.org/"">Kotlin</
 <li>Absence of primative types</li>
 <li>Syntax Surgar can distract new engineers</li>
 </ul>
-<p>When decision made: 8/1/2022</p>
-<p>When decision will be revisited: 8/1/2024</p>
-"
+",2022-08-01,2024-08-01
 Github (source),Infrastructure,Invest,lock,"<p><a href=""https://github.com/"">Github</a> is a platform to host all of your git based repositories. By extension <a href=""https://git-scm.com"">git</a> should be used as your distributed version control system.</p>
 <h3>Pros</h3>
 <ul>
@@ -1268,9 +1116,7 @@ Github (source),Infrastructure,Invest,lock,"<p><a href=""https://github.com/"">G
 <ul>
 <li>Occasional outages can affect engineering</li>
 </ul>
-<p>When decision made: 11/30/2026</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2026-11-30,2026-11-30
 Clair,Infrastructure,Hold,leaning,"<p><a href=""https://coreos.com/clair/docs/latest/"">Clair</a> is a security scanner for Docker containers. Using Clair you are able to determine if there are known security issues with your container.</p>
 <h3>Pros</h3>
 <ul>
@@ -1282,9 +1128,7 @@ Clair,Infrastructure,Hold,leaning,"<p><a href=""https://coreos.com/clair/docs/la
 <li>No UI</li>
 <li>Configuration isn’t straightforward</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Jira,Infrastructure,Invest,lock,"<p><a href=""https://www.atlassian.com/software/jira"">Jira</a> is project management software.</p>
 <h3>Pros</h3>
 <ul>
@@ -1298,9 +1142,7 @@ Jira,Infrastructure,Invest,lock,"<p><a href=""https://www.atlassian.com/software
 <li>Can feel really clunky at times</li>
 <li>Teams can be blocked when there are service interruptions</li>
 </ul>
-<p>When decision made: 5/1/2021</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2021-05-01,2021-05-01
 SonarQube,Infrastructure,Divest,confident,"<p><a href=""https://www.sonarqube.org"">SonarQube</a> is a platform for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities.</p>
 <h3>Pros</h3>
 <ul>
@@ -1319,9 +1161,7 @@ SonarQube,Infrastructure,Divest,confident,"<p><a href=""https://www.sonarqube.or
 <li>Has not been modernizing</li>
 <li>Deploying and maintaining ourselves can cause pain</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 New Relic,Infrastructure,Invest,confident,"<p><a href=""https://newrelic.com/"">New Relic</a> is an analytics package that can be used to gain insights about your application. NewRelic can be depoyed as an Application Performance Monitor (APM) or to your infrastructure for insights into how the system is performing as a whole. New Relic should be used instead of <a href="""">Datadog</a>.</p>
 <h3>Pros</h3>
 <ul>
@@ -1338,9 +1178,7 @@ New Relic,Infrastructure,Invest,confident,"<p><a href=""https://newrelic.com/"">
 <li>Cost prohibitive to use for logs as well</li>
 <li>Prometheus metrics can be expensive to ingest</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2025</p>
-"
+",2024-11-30,2025-11-30
 Prometheus + Grafana,Infrastructure,Invest,confident,"<p><a href=""https://prometheus.io/"">Prometheus</a> is an open source time series database. Prometheus implements a pull model for metrics rather than a push model. Meaning your applications need to have an endpoint, typically <code>/metrics</code> that Prometheus can scrape metrics from.</p>
 <p><a href=""https://grafana.com/"">Grafana</a> is an open source visualization tool that can connect to many different data sources to visualize data. Grafana also can provide alerting.</p>
 <p>Because one is the data source and the other the visualization we are combining the two of them here.</p>
@@ -1358,9 +1196,7 @@ Prometheus + Grafana,Infrastructure,Invest,confident,"<p><a href=""https://prome
 <li>We administer these services ourselves or pay for vendor support</li>
 <li>Lack of cohesion sometimes</li>
 </ul>
-<p>When decision made: 11/30/2024<br/>
-When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Velero (Heptio Ark),Infrastructure,Invest,confident,"<p><a href=""https://velero.io/"">Velero</a> formerly Heptio Ark is an automated backup solution native for Kubernetes. Velero automatically backs up your k8s configuration and takes snapshots of persistent volumes if necessary.</p>
 <h3>Pros</h3>
 <ul>
@@ -1372,9 +1208,7 @@ Velero (Heptio Ark),Infrastructure,Invest,confident,"<p><a href=""https://velero
 <ul>
 <li>Requires maintenance</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Athena,Infrastructure,Hold,confident,"<p><a href=""https://aws.amazon.com/athena/"">Amazon Athena</a> is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.</p>
 <p>Athena is easy to use. Simply point to your data in Amazon S3, define the schema, and start querying using standard SQL. Most results are delivered within seconds. With Athena, there’s no need for complex ETL jobs to prepare your data for analysis. This makes it easy for anyone with SQL skills to quickly analyze large-scale datasets.</p>
 <h3>Pros</h3>
@@ -1388,8 +1222,7 @@ Athena,Infrastructure,Hold,confident,"<p><a href=""https://aws.amazon.com/athena
 In some cases, other technologies like Spark could be a prefered means to query the S3 data.  This might be for performance reasons (more control over the node types that execute the query).</li>
 <li>Queries can be costly if care is not taken to bound your query</li>
 </ul>
-<p>When decision made: 1/30/2025</p>
-"
+",2025-01-30,
 S3,Infrastructure,Invest,confident,"<p>S3 is a distributed file system. It is highly scalable and has many uses. Recommended usages are diverse. One such scenario: it is the recommended WNE technology for data lakes including two types of zones:</p>
 <ol>
 <li>Raw (such as a copy of operational data stores or as the history of operational events)</li>
@@ -1407,9 +1240,7 @@ S3,Infrastructure,Invest,confident,"<p>S3 is a distributed file system. It is hi
 <ul>
 <li>Without oversight it’s easy to accumulate data that does not have value</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 EKS,Infrastructure,Invest,confident,"<p><a href="""">Kubernetes</a> is the best container orchestration system around. AWS has decided to make it a first class citizen on AWS by offering a managed system. The idea here is to make it easier to maintain your k8s cluster for minimal cost.</p>
 <h3>Pros</h3>
 <ul>
@@ -1424,9 +1255,7 @@ EKS,Infrastructure,Invest,confident,"<p><a href="""">Kubernetes</a> is the best 
 <li>Tied to AWS</li>
 <li>Less ability to customize</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Jenkins,Infrastructure,Divest,leaning,"<p><a href=""https://jenkins.io/"">Jenkins</a> is a build system. Built by the open source community it provides all the functionality needed for continuous integration.</p>
 <h3>Pros</h3>
 <ul>
@@ -1437,9 +1266,7 @@ Jenkins,Infrastructure,Divest,leaning,"<p><a href=""https://jenkins.io/"">Jenkin
 <ul>
 <li>Sometimes low quality plugins due to open source community</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Teamcity,Infrastructure,Divest,leaning,"<p><a href=""https://www.jetbrains.com/teamcity/"">Teamcity</a> is a build system. Built by the folks at Jetbrains it provides all the functionality needed for continuous integration.</p>
 <h3>Pros</h3>
 <ul>
@@ -1453,9 +1280,7 @@ Teamcity,Infrastructure,Divest,leaning,"<p><a href=""https://www.jetbrains.com/t
 <li>Not as popular as Jenkins and so there are less plugins</li>
 <li>Costs money</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Spinnaker,Infrastructure,Divest,confident,"<p><a href=""https://www.spinnaker.io/"">Spinnaker</a> is a continuous delivery tool that can work with many different types of infrastructure. While Spinnaker can work with anything we have chosen to use it primarily to manage the deployment pipelines for the applications that reside on our Kubernetes cluster.</p>
 <h3>Pros</h3>
 <ul>
@@ -1470,9 +1295,7 @@ Spinnaker,Infrastructure,Divest,confident,"<p><a href=""https://www.spinnaker.io
 <li>Not super well documented</li>
 <li>Lack of feature development</li>
 </ul>
-<p>When decision made: 11/30/2024<br />
-When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Concourse CI,Infrastructure,Divest,budding,"<p><a href=""https://concourse-ci.org/"">Concourse CI</a> is an open-source continuous thing-doer. Built on the simple mechanics of resources, tasks, and jobs, Concourse presents a general approach to automation that makes it great for CI/CD. Could potentially replace <a href="""">Spinnaker</a> for CI.</p>
 <h3>Pros</h3>
 <ul>
@@ -1487,9 +1310,7 @@ Concourse CI,Infrastructure,Divest,budding,"<p><a href=""https://concourse-ci.or
 <li>Poor community support</li>
 <li>Very complex underlying architecture</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Terraform (Provisioning),Infrastructure,Hold,leaning,"<p><a href=""https://www.terraform.io/"">Terraform</a> is an open source tool to use <code>Infrastructure as Code</code> principles. As your infrastructure is created you can always make modifications and deploy all of your infra like you would with code.</p>
 <h3>Pros</h3>
 <ul>
@@ -1508,9 +1329,7 @@ Terraform (Provisioning),Infrastructure,Hold,leaning,"<p><a href=""https://www.t
 </ul>
 <p>Terraform workspaces should be employed to separate different environments.<br />
 Replaces <a href="""">Cloud Formation</a></p>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 AWS CloudFormation,Infrastructure,Hold,leaning,"<p><a href=""https://aws.amazon.com/cloudformation/"">CloudFormation</a> iprovides a common language for you to model and provision AWS and third party application resources in your cloud environment. AWS CloudFormation allows you to use programming languages or a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This gives you a single source of truth for your AWS and third party resources.</p>
 <h3>Pros</h3>
 <ul>
@@ -1522,9 +1341,7 @@ AWS CloudFormation,Infrastructure,Hold,leaning,"<p><a href=""https://aws.amazon.
 <li>Only works with AWS</li>
 <li>Tools and syntax are arguably unintuitive</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Istio,Infrastructure,Divest,confident,"<p><a href=""https://istio.io/"">Istio</a> helps reduce the complexity deployments, and eases the strain on your development teams. It is a completely open source service mesh that layers transparently onto existing distributed applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -1542,9 +1359,7 @@ Istio,Infrastructure,Divest,confident,"<p><a href=""https://istio.io/"">Istio</a
 <li>Extra cost due to massive increase in pods</li>
 <li>Ambient Mesh option converts envoy into a multi-tenant system which can lead to one tenant hurting other tenants</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Traefik,Infrastructure,Divest,confident,"<p><a href=""https://traefik.io/traefik/"">Traefik</a> is a leading modern reverse proxy and load balancer that makes deploying microservices easy. Traefik integrates with your existing infrastructure components and configures itself automatically and dynamically.</p>
 <h3>Pros</h3>
 <ul>
@@ -1558,9 +1373,7 @@ Traefik,Infrastructure,Divest,confident,"<p><a href=""https://traefik.io/traefik
 <li>Emerging support for deployment patterns (e.g. blue/green)</li>
 <li>Major API version upgrades have been painful</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 ECR,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/ecr/"">ECR</a> is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Amazon ECR is integrated with Amazon Elastic Container Service (ECS), simplifying your development to production workflow. Amazon ECR eliminates the need to operate your own container repositories or worry about scaling the underlying infrastructure. Amazon ECR hosts your images in a highly available and scalable architecture, allowing you to reliably deploy containers for your applications.</p>
 <h3>Pros</h3>
 <ul>
@@ -1573,9 +1386,7 @@ ECR,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/ecr/"">EC
 <li>Security scanning is not intuitive</li>
 <li>Interface is lacking</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 AWS Api Gateway,Infrastructure,Hold,none,"<p><a href=""https://aws.amazon.com/api-gateway/"">Api Gateway</a> is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the “front door” for applications to access data, business logic, or functionality from your backend services. Using API Gateway, you can create RESTful APIs and WebSocket APIs that enable real-time two-way communication applications. API Gateway supports containerized and serverless workloads, as well as web applications.</p>
 <p>Generally speaking Api Gateway is a cool technology but there is a strong preference to run appliations on our existing <a href="""">Kubernetes</a> clusters to take advantage of free resources that are already available.</p>
 <h3>Pros</h3>
@@ -1589,9 +1400,7 @@ AWS Api Gateway,Infrastructure,Hold,none,"<p><a href=""https://aws.amazon.com/ap
 <li>Api gateway can be more expensive when dealing with large loads</li>
 <li>Difficult to have large application cohesion</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Serverless.com,Infrastructure,Hold,none,"<p><a href=""https://serverless.com/"">Serverless</a> The Serverless Framework gives you everything you need to develop, deploy, monitor and secure serverless applications on any cloud.</p>
 <h3>Pros</h3>
 <ul>
@@ -1605,9 +1414,7 @@ Serverless.com,Infrastructure,Hold,none,"<p><a href=""https://serverless.com/"">
 <li>Path to serverless is generally a rewrite</li>
 <li>Other applications can be dockerized and ran on existing resources</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 ECS,Infrastructure,Divest,none,"<p><a href=""https://aws.amazon.com/ecs/"">Elastic Container Service (ECS)</a> is a fully managed container orchestration service. Customers such as Duolingo, Samsung, GE, and Cookpad use ECS to run their most sensitive and mission critical applications because of its security, reliability, and scalability.</p>
 <h3>Pros</h3>
 <ul>
@@ -1621,9 +1428,7 @@ ECS,Infrastructure,Divest,none,"<p><a href=""https://aws.amazon.com/ecs/"">Elast
 <li>Only works with AWS</li>
 </ul>
 <p>While ECS and Kubernetes are very similar <a href="""">Kubernetes</a> is favored heavily.</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Datadog,Infrastructure,Hold,none,"<p><a href=""https://www.datadoghq.com/"">Datadog</a> is a hosted platform for monitoring and analytics. Datadog enables easy instrumentation of many types of applications and infrastructure.</p>
 <h3>Pros</h3>
 <ul>
@@ -1636,9 +1441,7 @@ Datadog,Infrastructure,Hold,none,"<p><a href=""https://www.datadoghq.com/"">Data
 <li>No Azure support</li>
 <li>Dashboards aren’t very straightforward</li>
 </ul>
-<p>When decision made: 3/5/2020</p>
-<p>When decision will be revisited: 01/01/2022</p>
-"
+",2020-03-05,2022-01-01
 Subversion,Infrastructure,Divest,none,"<p><a href=""https://subversion.apache.org/"">Subversion</a> is an open-source, centralized version control system characterized by its reliability as a safe haven for valuable data; the simplicity of its model and usage; and its ability to support the needs of a wide variety of users and projects, from individuals to large-scale enterprise operations.</p>
 <h3>Pros</h3>
 <ul>
@@ -1653,9 +1456,7 @@ Subversion,Infrastructure,Divest,none,"<p><a href=""https://subversion.apache.or
 <li>Not as friendly to .NET developers</li>
 <li>Refactoring painful</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Stackify,Infrastructure,Divest,none,"<p><a href=""https://stackify.com/"">Stackify Retrace</a> combines APM, centralized logging, code profiling, integrated errors and logs, and more under one roof. That way, everyone is in the know.</p>
 <h3>Pros</h3>
 <ul>
@@ -1669,9 +1470,7 @@ Stackify,Infrastructure,Divest,none,"<p><a href=""https://stackify.com/"">Stacki
 <li>Cost</li>
 <li>Not as highly rated as other APM providers</li>
 </ul>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 AMI (Custom built),Infrastructure,Divest,none,"<p><a href=""https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instances-and-amis.html"">AMI (Custom Built)</a> is a template that contains a software configuration (for example, an operating system, an application server, and applications). From an AMI, you launch an instance, which is a copy of the AMI running as a virtual server in the cloud.</p>
 <h3>Pros</h3>
 <ul>
@@ -1684,9 +1483,7 @@ AMI (Custom built),Infrastructure,Divest,none,"<p><a href=""https://docs.aws.ama
 <li>Can be rather costly, especially for low use applications</li>
 </ul>
 <p><a href="""">Docker</a> replaces the need for creating custom AMIs that contain software packages.</p>
-<p>When decision made: 5/1/2020</p>
-<p>When decision will be revisited: 5/1/2021</p>
-"
+",2020-05-01,2021-05-01
 Gitlab,Infrastructure,Divest,none,"<p>With <a href=""https://about.gitlab.com/"">Gitlab</a>, you get a complete CI/CD toolchain in a single application. One interface. One conversation. One permission model. Thousands of features. You’ll be amazed at everything GitLab can do today. And we’re just getting started.</p>
 <h3>Pros</h3>
 <ul>
@@ -1700,9 +1497,7 @@ Gitlab,Infrastructure,Divest,none,"<p>With <a href=""https://about.gitlab.com/""
 <li>Not well suited for web apis</li>
 <li>Small community compared with Github</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 Octopus Deploy,Infrastructure,Divest,none,"<p><a href=""https://octopus.com/"">Octopus Deploy</a> You already have a source control system and a build server. Octopus doesn’t replace these, we turbocharge them. We allow the build server to focus on what it does best: compiling code and running tests, while Octopus takes care of deploying and promoting releases between environments, automating deployments, and automating the operations tasks that keep the software running.</p>
 <h3>Pros</h3>
 <ul>
@@ -1718,9 +1513,7 @@ Octopus Deploy,Infrastructure,Divest,none,"<p><a href=""https://octopus.com/"">O
 <li>Configuration can get complicated very quickly</li>
 <li>Small community and very few plugins</li>
 </ul>
-<p>When decision made: 1/1/2020</p>
-<p>When decision will be revisited: 1/1/2022</p>
-"
+",2020-01-01,2022-01-01
 k6,Backend,Invest,budding,"<p><a href=""https://k6.io/"">k6</a> is a developer-centric, free and open-source load testing tool built for making performance testing a productive and enjoyable experience. It is written in Go and runs test scripts that are written in JavaScript.</p>
 <h3>Pros</h3>
 <ul>
@@ -1734,9 +1527,7 @@ k6,Backend,Invest,budding,"<p><a href=""https://k6.io/"">k6</a> is a developer-c
 <li>Including external Node.js modules requires extra effort to bundle, if needed.</li>
 </ul>
 <p>** Currently replacing <a href="""">jMeter</a>.</p>
-<p>When decision made: 06/2023</p>
-<p>When decision will be revisited: 06/2024</p>
-"
+",2023-06-01,2024-06-01
 AWS CodePipeline,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.com/codepipeline/"">AWS CodePipeline</a> is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates. CodePipeline automates the build, test, and deploy phases of your release process every time there is a code change, based on the release model you define. This enables you to rapidly and reliably deliver features and updates. You can easily integrate AWS CodePipeline with third-party services such as GitHub or with your own custom plugin.</p>
 <h3>Pros</h3>
 <ul>
@@ -1748,9 +1539,7 @@ AWS CodePipeline,Infrastructure,Invest,budding,"<p><a href=""https://aws.amazon.
 <ul>
 <li>AWS specific product.</li>
 </ul>
-<p>When decision made: 1/1/2022</p>
-<p>When decision will be revisited: 1/1/2024</p>
-"
+",2022-01-01,2024-01-01
 Crossplane,Infrastructure,Invest,budding,"<p><a href=""https://www.crossplane.io/"">Crossplane</a> is a control plane framework that is highly extensible and can be used to leverage Kubernetes APIs to manage resources in places like AWS, GCP, Azure, or other tooling</p>
 <h3>Pros</h3>
 <ul>
@@ -1763,9 +1552,7 @@ Crossplane,Infrastructure,Invest,budding,"<p><a href=""https://www.crossplane.io
 <ul>
 <li>Fairly complex leading to steep learning curve</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Cilium/eBPF Technology,Infrastructure,Invest,budding,"<p><a href=""https://cilium.io/"">Cilium</a> is an open source, cloud native solution for providing, securing, and observing network connectivity between workloads, fueled by the revolutionary Kernel technology eBPF</p>
 <h3>Pros</h3>
 <ul>
@@ -1779,9 +1566,7 @@ Cilium/eBPF Technology,Infrastructure,Invest,budding,"<p><a href=""https://ciliu
 <ul>
 <li>Complexity leading to steep learning curve</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Linkerd,Infrastructure,Invest,budding,"<p><a href=""https://linkerd.io/"">Linkerd</a> a fast, lightweight and secure service mesh with limited complexity points.</p>
 <h3>Pros</h3>
 <ul>
@@ -1795,9 +1580,7 @@ Linkerd,Infrastructure,Invest,budding,"<p><a href=""https://linkerd.io/"">Linker
 <li>Simplicity means more complex needs like JWT validation is missing</li>
 <li>No built-in ingress functionality built-in</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 ArgoCD,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.github.io/cd/"">ArgoCD</a> is a declarative, GitOps continuous delivery tool for Kubernetes.</p>
 <h3>Pros</h3>
 <ul>
@@ -1811,9 +1594,7 @@ ArgoCD,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.github.io/cd
 <ul>
 <li>Scalability concerns as you get to a large footprint</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Argo Rollouts,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.github.io/rollouts/"">Argo Rollouts</a> is a Kubernetes controller and set of CRDs which provide advanced deployment capabilities such as blue-green, canary, canary analysis, experimentation, and progressive delivery features to Kubernetes.</p>
 <h3>Pros</h3>
 <ul>
@@ -1827,9 +1608,7 @@ Argo Rollouts,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.githu
 <li>Requires use of a Rollout CRD rather then integrating with a Deployment resource</li>
 <li>Confusion can be caused when changes are rolled back in Deployment but not in source control (when following GitOps model)</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30
 Argo Workflows,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.github.io/workflows/"">Argo Workflows</a>is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes for data pipelines, CI/CD processes, etc;.</p>
 <h3>Pros</h3>
 <ul>
@@ -1844,6 +1623,4 @@ Argo Workflows,Infrastructure,Invest,budding,"<p><a href=""https://argoproj.gith
 <li>RBAC system is confusing due to how it uses the Kubernetes RBAC currently</li>
 <li>Since it supports more than CI it can be slightly confusing moving from a traditional CI system</li>
 </ul>
-<p>When decision made: 11/30/2024</p>
-<p>When decision will be revisited: 11/30/2026</p>
-"
+",2024-11-30,2026-11-30

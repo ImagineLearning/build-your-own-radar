@@ -31,6 +31,17 @@ const InputSanitizer = function () {
   var self = {}
   self.sanitize = function (rawBlip) {
     var blip = trimWhiteSpaces(rawBlip)
+    
+    if (blip.decidedDate) {
+      const decidedDate = new Date(blip.decidedDate + ' 23:59:59 UTC');
+      blip.description += `\n<p><b>When decision made:</b> ${ decidedDate.toLocaleDateString() } </p>`
+    }
+
+    if (blip.revisitDate) {
+      const revisitDate = new Date(blip.revisitDate + ' 23:59:59 UTC'); 
+      blip.description += `<p><b>When decision will be revisited:</b> ${ revisitDate.toLocaleDateString() } </p>`
+    }
+    
     blip.description = sanitizeHtml(blip.description, relaxedOptions)
     blip.name = sanitizeHtml(blip.name, restrictedOptions)
     blip.icon = sanitizeHtml(blip.icon, restrictedOptions)
