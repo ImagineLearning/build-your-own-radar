@@ -55,6 +55,62 @@ Run `npm run parse_markdown` before you create a PR with new items.
 
 To see the results locally run `npm run start` and that will start a server at `localhost:8080`.
 
+## Customizing Rings
+
+The radar's rings can be customized in several ways:
+
+### Ring Order
+
+Ring order (from center outward) is defined in `src/util/factory.js`. By default, the order is:
+
+```javascript
+var ringOrder = ['Invest', 'Hold', 'Trial', 'Divest', 'Fleeing', 'Junkyard']
+```
+
+To change the order or add/remove rings:
+
+1. Modify the `ringOrder` array with your preferred ring names
+2. Update the `maxRings` variable (line above) to match the number of rings
+3. Ensure your CSV file uses these exact ring names in the "ring" column
+
+### Ring Thickness
+
+Ring thickness is controlled by the `sequence` array in `src/util/ringCalculator.js`:
+
+```javascript
+var sequence = [0, 6, 5, 3, 2, 1, 1, 1, 1, 1]
+```
+
+This array determines the relative spacing between rings:
+- The first value (0) represents the center point
+- Each subsequent value controls the thickness of a ring
+- Larger values create thicker rings
+- The sequence should have at least N+1 elements where N is your number of rings
+
+For example, to make outer rings thicker, you could change the sequence to `[0, 6, 5, 3, 3, 3, 3, 3]`.
+
+### Ring Colors
+
+Ring colors are defined in the CSS in `src/stylesheets/base.scss` around line 208:
+
+```scss
+path {
+  &.ring-arc-0 {
+    stroke: none;
+    fill: $grey-darkest;  // Innermost ring (Invest)
+  }
+  &.ring-arc-1 {
+    stroke: none;
+    fill: $grey-dark;     // Second ring (Hold)
+  }
+  // And so on...
+}
+```
+
+The number in `ring-arc-X` corresponds to the ring's index in the `ringOrder` array (0 for innermost, 1 for second, etc.). 
+
+Color variables are defined in `src/stylesheets/_colors.scss`, or you can use hex values directly.
+
 ## Futures
 
 - Handle more csv files automatically instead of a static list
