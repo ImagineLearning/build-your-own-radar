@@ -599,6 +599,50 @@ const Radar = function (size, radar) {
     }, [])
   }
 
+  function drawRingLegend() {
+    // Position the legend below the radar
+    var container = svg.append('g')
+      .attr('class', 'ring-legend')
+      .attr('transform', 'translate(' + (0) + ', ' + (size + 40) + ')')
+
+    container.append('text')
+      .attr('x', 0)
+      .attr('y', 0)
+      .attr('font-weight', 'bold')
+      .text('Ring Definitions')
+
+    // Get rings from the radar and display each with its color
+    radar.rings().forEach(function(ring, i) {
+
+
+      // Add colored circle for the ring
+      container.append('circle')
+        .attr('cx', 10)
+        .attr('cy', 25 + (i * 25))
+        .attr('r', 3)
+        .attr('class', 'ring-arc-' + ring.order())
+        .attr('stroke', '#fff')
+        .attr('stroke-width', '1px')
+
+      // Add the ring name
+      container.append('text')
+        .attr('x', 25)
+        .attr('y', 30 + (i * 25))
+        .attr('font-size', '0.9em')
+        .attr('font-weight', 'bold')
+        .text(ring.name() + ':')
+      
+      // Add the ring definition if available
+      if (ring.definition()) {
+        container.append('text')
+          .attr('x', 110)
+          .attr('y', 30 + (i * 25))
+          .attr('font-size', '0.9em')
+          .text(ring.definition())
+      }
+    })
+  }
+
   self.plot = function () {
     var rings, quadrants, alternatives, currentSheet
 
@@ -621,7 +665,7 @@ const Radar = function (size, radar) {
 
     svg
       .attr('id', 'radar-plot')
-      .attr('viewBox', '0 0 ' + size + ' ' + (size + 14));
+      .attr('viewBox', '0 0 ' + size + ' ' + (size + 200));
 
     // First and fourth quadrants need to come after the radar plot container
     // in the DOM for the flexbox layout to work properly.
@@ -642,8 +686,10 @@ const Radar = function (size, radar) {
     })
 
     blips = createBlipGroups(quadrants)
-    plotRadarFooter()
     
+    drawRingLegend()
+    
+    plotRadarFooter()
   }
 
   return self

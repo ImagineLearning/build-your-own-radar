@@ -59,7 +59,7 @@ To see the results locally run `npm run start` and that will start a server at `
 
 The radar's rings can be customized in several ways:
 
-### Ring Order
+### Ring Order and Definitions
 
 Ring order (from center outward) is defined in `src/util/factory.js`. By default, the order is:
 
@@ -67,11 +67,25 @@ Ring order (from center outward) is defined in `src/util/factory.js`. By default
 var ringOrder = ['Invest', 'Hold', 'Trial', 'Divest', 'Fleeing', 'Junkyard']
 ```
 
-To change the order or add/remove rings:
+Ring definitions are also managed in the same file:
+
+```javascript
+var ringDefinitions = {
+  'Invest': 'Technologies we are currently using and recommend',
+  'Hold': 'Technologies we have adopted and are satisfied with',
+  'Trial': 'Technologies we are experimenting with on projects',
+  'Divest': 'Technologies we are moving away from',
+  'Fleeing': 'Technologies we are actively removing from our stack',
+  'Junkyard': 'Technologies we no longer use or recommend'
+}
+```
+
+To change the order, add/remove rings, or update definitions:
 
 1. Modify the `ringOrder` array with your preferred ring names
-2. Update the `maxRings` variable (line above) to match the number of rings
-3. Ensure your CSV file uses these exact ring names in the "ring" column
+2. Update the `ringDefinitions` object with corresponding descriptions
+3. Update the `maxRings` variable (above these declarations) to match the number of rings
+4. Ensure your CSV file uses these exact ring names in the "ring" column
 
 ### Ring Thickness
 
