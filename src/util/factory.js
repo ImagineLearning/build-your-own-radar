@@ -32,13 +32,21 @@ const plotRadar = function (title, blips, currentRadarName, alternativeRadars) {
 
   var rings = _.map(_.uniqBy(blips, 'ring'), 'ring')
   var ringMap = {}
-  var maxRings = 4
+  var maxRings = 6
 
-  _.each(rings, function (ringName, i) {
-    if (i === maxRings) {
+  // Define the specific ring order from center outward
+  var ringOrder = ['Invest', 'Hold', 'Trial', 'Divest', 'Fleeing', 'Junkyard']
+  
+  // Map rings to their predefined order
+  _.each(rings, function (ringName) {
+    var orderIndex = ringOrder.indexOf(ringName)
+    if (orderIndex === -1) {
+      throw new MalformedDataError('Ring "' + ringName + '" is not in the predefined ring order')
+    }
+    if (orderIndex >= maxRings) {
       throw new MalformedDataError(ExceptionMessages.TOO_MANY_RINGS)
     }
-    ringMap[ringName] = new Ring(ringName, i)
+    ringMap[ringName] = new Ring(ringName, orderIndex)
   })
 
   var quadrants = {}
